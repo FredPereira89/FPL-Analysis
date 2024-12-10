@@ -1,4 +1,3 @@
-FPL Analysis
 Welcome to the FPL Analysis repository! This project is dedicated to analyzing Fantasy Premier League (FPL) data to gain insights and build tools for improved decision-making. Whether you're a casual FPL manager or a data enthusiast, this repository provides resources, tools, and analyses to elevate your FPL strategy.
 
 Table of Contents
