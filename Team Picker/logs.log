@@ -1,0 +1,2490 @@
+2024-12-10 14:12:24,760:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-12-10 14:12:24,761:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-12-10 14:12:24,761:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-12-10 14:12:24,761:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-12-10 14:12:52,572:INFO:PyCaret RegressionExperiment
+2024-12-10 14:12:52,572:INFO:Logging name: reg-default-name
+2024-12-10 14:12:52,572:INFO:ML Usecase: MLUsecase.REGRESSION
+2024-12-10 14:12:52,576:INFO:version 3.3.2
+2024-12-10 14:12:52,576:INFO:Initializing setup()
+2024-12-10 14:12:52,576:INFO:self.USI: ed78
+2024-12-10 14:12:52,576:INFO:self._variable_keys: {'X_test', 'y', 'log_plots_param', 'fold_groups_param', 'seed', '_available_plots', 'html_param', 'pipeline', '_ml_usecase', 'X_train', 'exp_id', 'fold_generator', 'y_test', 'X', 'USI', 'target_param', 'data', 'transform_target_param', 'idx', 'gpu_param', 'fold_shuffle_param', 'y_train', 'gpu_n_jobs_param', 'memory', 'n_jobs_param', 'exp_name_log', 'logging_param'}
+2024-12-10 14:12:52,576:INFO:Checking environment
+2024-12-10 14:12:52,576:INFO:python_version: 3.9.13
+2024-12-10 14:12:52,576:INFO:python_build: ('main', 'Aug 25 2022 23:51:50')
+2024-12-10 14:12:52,576:INFO:machine: AMD64
+2024-12-10 14:12:52,576:INFO:platform: Windows-10-10.0.19045-SP0
+2024-12-10 14:12:52,576:INFO:Memory: svmem(total=34274566144, available=21199634432, percent=38.1, used=13074931712, free=21199634432)
+2024-12-10 14:12:52,576:INFO:Physical Core: 8
+2024-12-10 14:12:52,576:INFO:Logical Core: 8
+2024-12-10 14:12:52,576:INFO:Checking libraries
+2024-12-10 14:12:52,576:INFO:System:
+2024-12-10 14:12:52,576:INFO:    python: 3.9.13 (main, Aug 25 2022, 23:51:50) [MSC v.1916 64 bit (AMD64)]
+2024-12-10 14:12:52,576:INFO:executable: C:\ProgramData\Anaconda3\python.exe
+2024-12-10 14:12:52,576:INFO:   machine: Windows-10-10.0.19045-SP0
+2024-12-10 14:12:52,576:INFO:PyCaret required dependencies:
+2024-12-10 14:12:52,853:INFO:                 pip: 22.2.2
+2024-12-10 14:12:52,853:INFO:          setuptools: 63.4.1
+2024-12-10 14:12:52,853:INFO:             pycaret: 3.3.2
+2024-12-10 14:12:52,854:INFO:             IPython: 7.31.1
+2024-12-10 14:12:52,854:INFO:          ipywidgets: 7.6.5
+2024-12-10 14:12:52,854:INFO:                tqdm: 4.64.1
+2024-12-10 14:12:52,854:INFO:               numpy: 1.21.5
+2024-12-10 14:12:52,854:INFO:              pandas: 1.4.4
+2024-12-10 14:12:52,854:INFO:              jinja2: 2.11.3
+2024-12-10 14:12:52,854:INFO:               scipy: 1.9.1
+2024-12-10 14:12:52,854:INFO:              joblib: 1.1.0
+2024-12-10 14:12:52,854:INFO:             sklearn: 1.0.2
+2024-12-10 14:12:52,854:INFO:                pyod: 2.0.2
+2024-12-10 14:12:52,854:INFO:            imblearn: 0.12.4
+2024-12-10 14:12:52,854:INFO:   category_encoders: 2.6.4
+2024-12-10 14:12:52,854:INFO:            lightgbm: 4.5.0
+2024-12-10 14:12:52,854:INFO:               numba: 0.55.1
+2024-12-10 14:12:52,854:INFO:            requests: 2.28.1
+2024-12-10 14:12:52,854:INFO:          matplotlib: 3.5.2
+2024-12-10 14:12:52,854:INFO:          scikitplot: 0.3.7
+2024-12-10 14:12:52,854:INFO:         yellowbrick: 1.5
+2024-12-10 14:12:52,854:INFO:              plotly: 5.9.0
+2024-12-10 14:12:52,854:INFO:    plotly-resampler: Not installed
+2024-12-10 14:12:52,854:INFO:             kaleido: 0.2.1
+2024-12-10 14:12:52,854:INFO:           schemdraw: 0.15
+2024-12-10 14:12:52,854:INFO:         statsmodels: 0.13.2
+2024-12-10 14:12:52,854:INFO:              sktime: 0.26.0
+2024-12-10 14:12:52,854:INFO:               tbats: 1.1.3
+2024-12-10 14:12:52,854:INFO:            pmdarima: 2.0.4
+2024-12-10 14:12:52,854:INFO:              psutil: 5.9.0
+2024-12-10 14:12:52,854:INFO:          markupsafe: 2.0.1
+2024-12-10 14:12:52,854:INFO:             pickle5: Not installed
+2024-12-10 14:12:52,854:INFO:         cloudpickle: 2.0.0
+2024-12-10 14:12:52,855:INFO:         deprecation: 2.1.0
+2024-12-10 14:12:52,855:INFO:              xxhash: 3.5.0
+2024-12-10 14:12:52,855:INFO:           wurlitzer: Not installed
+2024-12-10 14:12:52,855:INFO:PyCaret optional dependencies:
+2024-12-10 14:12:54,487:INFO:                shap: 0.44.1
+2024-12-10 14:12:54,487:INFO:           interpret: 0.6.7
+2024-12-10 14:12:54,487:INFO:                umap: 0.5.7
+2024-12-10 14:12:54,488:INFO:     ydata_profiling: 4.12.0
+2024-12-10 14:12:54,488:INFO:  explainerdashboard: 0.4.7
+2024-12-10 14:12:54,488:INFO:             autoviz: Not installed
+2024-12-10 14:12:54,488:INFO:           fairlearn: 0.7.0
+2024-12-10 14:12:54,488:INFO:          deepchecks: Not installed
+2024-12-10 14:12:54,488:INFO:             xgboost: 1.7.1
+2024-12-10 14:12:54,488:INFO:            catboost: 1.2.7
+2024-12-10 14:12:54,488:INFO:              kmodes: 0.12.2
+2024-12-10 14:12:54,488:INFO:             mlxtend: 0.23.3
+2024-12-10 14:12:54,488:INFO:       statsforecast: 1.5.0
+2024-12-10 14:12:54,488:INFO:        tune_sklearn: Not installed
+2024-12-10 14:12:54,488:INFO:                 ray: Not installed
+2024-12-10 14:12:54,488:INFO:            hyperopt: 0.2.7
+2024-12-10 14:12:54,488:INFO:              optuna: 4.1.0
+2024-12-10 14:12:54,488:INFO:               skopt: 0.10.2
+2024-12-10 14:12:54,488:INFO:              mlflow: 2.18.0
+2024-12-10 14:12:54,488:INFO:              gradio: 4.26.0
+2024-12-10 14:12:54,488:INFO:             fastapi: 0.115.6
+2024-12-10 14:12:54,488:INFO:             uvicorn: 0.32.1
+2024-12-10 14:12:54,488:INFO:              m2cgen: 0.10.0
+2024-12-10 14:12:54,488:INFO:           evidently: 0.4.40
+2024-12-10 14:12:54,488:INFO:               fugue: 0.8.7
+2024-12-10 14:12:54,488:INFO:           streamlit: Not installed
+2024-12-10 14:12:54,488:INFO:             prophet: Not installed
+2024-12-10 14:12:54,488:INFO:None
+2024-12-10 14:12:54,488:INFO:Set up GPU usage.
+2024-12-10 14:12:54,488:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-12-10 14:12:54,488:WARNING:cuML is outdated or not found. Required version is >=23.08.
+                Please visit https://rapids.ai/install for installation instructions.
+2024-12-10 14:12:54,488:INFO:Set up data.
+2024-12-10 14:12:54,502:INFO:Set up folding strategy.
+2024-12-10 14:12:54,502:INFO:Set up train/test split.
+2024-12-10 14:12:54,516:INFO:Set up index.
+2024-12-10 14:12:54,516:INFO:Assigning column types.
+2024-12-10 14:12:54,530:INFO:Engine successfully changes for model 'lr' to 'sklearn'.
+2024-12-10 14:12:54,530:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-12-10 14:12:54,530:INFO:Engine for model 'lasso' has not been set explicitly, hence returning None.
+2024-12-10 14:12:54,530:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-12-10 14:12:54,534:INFO:Engine for model 'ridge' has not been set explicitly, hence returning None.
+2024-12-10 14:12:54,534:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-12-10 14:12:54,538:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2024-12-10 14:12:54,538:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-12-10 14:12:54,598:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-12-10 14:12:54,599:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-12-10 14:12:54,634:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-12-10 14:12:54,634:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-12-10 14:12:54,634:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-12-10 14:12:54,634:INFO:Soft dependency imported: xgboost: 1.7.1
+2024-12-10 14:12:54,808:INFO:Soft dependency imported: catboost: 1.2.7
+2024-12-10 14:12:54,824:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-12-10 14:12:54,824:INFO:Engine for model 'lasso' has not been set explicitly, hence returning None.
+2024-12-10 14:12:54,824:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-12-10 14:12:54,828:INFO:Engine for model 'ridge' has not been set explicitly, hence returning None.
+2024-12-10 14:12:54,828:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-12-10 14:12:54,831:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2024-12-10 14:12:54,831:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-12-10 14:12:54,889:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-12-10 14:12:54,889:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-12-10 14:12:54,924:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-12-10 14:12:54,924:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-12-10 14:12:54,925:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-12-10 14:12:54,925:INFO:Soft dependency imported: xgboost: 1.7.1
+2024-12-10 14:12:55,007:INFO:Soft dependency imported: catboost: 1.2.7
+2024-12-10 14:12:55,008:INFO:Engine successfully changes for model 'lasso' to 'sklearn'.
+2024-12-10 14:12:55,008:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-12-10 14:12:55,008:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-12-10 14:12:55,012:INFO:Engine for model 'ridge' has not been set explicitly, hence returning None.
+2024-12-10 14:12:55,012:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-12-10 14:12:55,015:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2024-12-10 14:12:55,015:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-12-10 14:12:55,072:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-12-10 14:12:55,072:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-12-10 14:12:55,108:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-12-10 14:12:55,108:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-12-10 14:12:55,108:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-12-10 14:12:55,108:INFO:Soft dependency imported: xgboost: 1.7.1
+2024-12-10 14:12:55,189:INFO:Soft dependency imported: catboost: 1.2.7
+2024-12-10 14:12:55,190:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-12-10 14:12:55,190:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-12-10 14:12:55,194:INFO:Engine for model 'ridge' has not been set explicitly, hence returning None.
+2024-12-10 14:12:55,194:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-12-10 14:12:55,197:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2024-12-10 14:12:55,198:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-12-10 14:12:55,262:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-12-10 14:12:55,262:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-12-10 14:12:55,297:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-12-10 14:12:55,297:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-12-10 14:12:55,297:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-12-10 14:12:55,297:INFO:Soft dependency imported: xgboost: 1.7.1
+2024-12-10 14:12:55,381:INFO:Soft dependency imported: catboost: 1.2.7
+2024-12-10 14:12:55,382:INFO:Engine successfully changes for model 'ridge' to 'sklearn'.
+2024-12-10 14:12:55,382:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-12-10 14:12:55,382:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-12-10 14:12:55,386:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-12-10 14:12:55,389:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2024-12-10 14:12:55,389:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-12-10 14:12:55,447:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-12-10 14:12:55,447:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-12-10 14:12:55,482:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-12-10 14:12:55,482:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-12-10 14:12:55,482:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-12-10 14:12:55,482:INFO:Soft dependency imported: xgboost: 1.7.1
+2024-12-10 14:12:55,566:INFO:Soft dependency imported: catboost: 1.2.7
+2024-12-10 14:12:55,566:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-12-10 14:12:55,566:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-12-10 14:12:55,570:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-12-10 14:12:55,574:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2024-12-10 14:12:55,574:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-12-10 14:12:55,632:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-12-10 14:12:55,632:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-12-10 14:12:55,667:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-12-10 14:12:55,667:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-12-10 14:12:55,667:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-12-10 14:12:55,667:INFO:Soft dependency imported: xgboost: 1.7.1
+2024-12-10 14:12:55,747:INFO:Soft dependency imported: catboost: 1.2.7
+2024-12-10 14:12:55,748:INFO:Engine successfully changes for model 'en' to 'sklearn'.
+2024-12-10 14:12:55,748:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-12-10 14:12:55,748:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-12-10 14:12:55,752:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-12-10 14:12:55,755:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-12-10 14:12:55,811:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-12-10 14:12:55,812:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-12-10 14:12:55,847:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-12-10 14:12:55,847:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-12-10 14:12:55,847:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-12-10 14:12:55,848:INFO:Soft dependency imported: xgboost: 1.7.1
+2024-12-10 14:12:55,928:INFO:Soft dependency imported: catboost: 1.2.7
+2024-12-10 14:12:55,928:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-12-10 14:12:55,929:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-12-10 14:12:55,932:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-12-10 14:12:55,936:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-12-10 14:12:55,994:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-12-10 14:12:55,994:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-12-10 14:12:56,032:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-12-10 14:12:56,032:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-12-10 14:12:56,032:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-12-10 14:12:56,032:INFO:Soft dependency imported: xgboost: 1.7.1
+2024-12-10 14:12:56,115:INFO:Soft dependency imported: catboost: 1.2.7
+2024-12-10 14:12:56,116:INFO:Engine successfully changes for model 'knn' to 'sklearn'.
+2024-12-10 14:12:56,116:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-12-10 14:12:56,116:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-12-10 14:12:56,119:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-12-10 14:12:56,123:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-12-10 14:12:56,180:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-12-10 14:12:56,180:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-12-10 14:12:56,215:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-12-10 14:12:56,216:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-12-10 14:12:56,216:INFO:Soft dependency imported: xgboost: 1.7.1
+2024-12-10 14:12:56,301:INFO:Soft dependency imported: catboost: 1.2.7
+2024-12-10 14:12:56,302:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-12-10 14:12:56,302:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-12-10 14:12:56,306:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-12-10 14:12:56,309:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-12-10 14:12:56,367:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-12-10 14:12:56,367:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-12-10 14:12:56,402:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-12-10 14:12:56,402:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-12-10 14:12:56,402:INFO:Soft dependency imported: xgboost: 1.7.1
+2024-12-10 14:12:56,488:INFO:Soft dependency imported: catboost: 1.2.7
+2024-12-10 14:12:56,488:INFO:Engine successfully changes for model 'svm' to 'sklearn'.
+2024-12-10 14:12:56,488:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-12-10 14:12:56,488:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-12-10 14:12:56,492:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-12-10 14:12:56,496:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-12-10 14:12:56,555:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-12-10 14:12:56,591:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-12-10 14:12:56,591:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-12-10 14:12:56,591:INFO:Soft dependency imported: xgboost: 1.7.1
+2024-12-10 14:12:56,669:INFO:Soft dependency imported: catboost: 1.2.7
+2024-12-10 14:12:56,669:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-12-10 14:12:56,669:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-12-10 14:12:56,673:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-12-10 14:12:56,676:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-12-10 14:12:56,734:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-12-10 14:12:56,770:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-12-10 14:12:56,770:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-12-10 14:12:56,770:INFO:Soft dependency imported: xgboost: 1.7.1
+2024-12-10 14:12:56,849:INFO:Soft dependency imported: catboost: 1.2.7
+2024-12-10 14:12:56,851:INFO:Preparing preprocessing pipeline...
+2024-12-10 14:12:56,851:INFO:Set up simple imputation.
+2024-12-10 14:12:56,859:INFO:Set up encoding of categorical features.
+2024-12-10 14:12:56,859:INFO:Set up feature normalization.
+2024-12-10 14:12:56,972:INFO:Finished creating preprocessing pipeline.
+2024-12-10 14:12:56,979:INFO:Pipeline: Pipeline(memory=FastMemory(location=C:\Users\user\AppData\Local\Temp\joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['assists', 'clean_sheets',
+                                             'creativity', 'element',
+                                             'expected_assists',
+                                             'expected_goal_involvements',
+                                             'expected_goals',
+                                             'expected_goals_conceded',
+                                             'goals_conceded', 'goals_scored',
+                                             'ict_index', 'influence',
+                                             'minutes', 'opponent_te...
+                                             'value', 'yellow_cards', 'gw', ...],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['name'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('rest_encoding',
+                 TransformerWrapper(include=['name'],
+                                    transformer=TargetEncoder(cols=['name'],
+                                                              handle_missing='return_nan'))),
+                ('normalize', TransformerWrapper(transformer=RobustScaler()))])
+2024-12-10 14:12:56,979:INFO:Creating final display dataframe.
+2024-12-10 14:12:57,347:INFO:Setup _display_container:                     Description             Value
+0                    Session id               123
+1                        Target      total_points
+2                   Target type        Regression
+3           Original data shape        (9927, 70)
+4        Transformed data shape        (9927, 70)
+5   Transformed train set shape        (6948, 70)
+6    Transformed test set shape        (2979, 70)
+7              Numeric features                32
+8          Categorical features                 1
+9                    Preprocess              True
+10              Imputation type            simple
+11           Numeric imputation              mean
+12       Categorical imputation              mode
+13     Maximum one-hot encoding                25
+14              Encoding method              None
+15                    Normalize              True
+16             Normalize method            robust
+17               Fold Generator             KFold
+18                  Fold Number                 5
+19                     CPU Jobs                -1
+20                      Use GPU              True
+21               Log Experiment             False
+22              Experiment Name  reg-default-name
+23                          USI              ed78
+2024-12-10 14:12:57,351:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-12-10 14:12:57,351:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-12-10 14:12:57,355:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-12-10 14:12:57,359:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-12-10 14:12:57,416:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-12-10 14:12:57,449:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-12-10 14:12:57,449:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-12-10 14:12:57,450:INFO:Soft dependency imported: xgboost: 1.7.1
+2024-12-10 14:12:57,533:INFO:Soft dependency imported: catboost: 1.2.7
+2024-12-10 14:12:57,533:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-12-10 14:12:57,533:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-12-10 14:12:57,537:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-12-10 14:12:57,540:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-12-10 14:12:57,598:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-12-10 14:12:57,633:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-12-10 14:12:57,633:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-12-10 14:12:57,633:INFO:Soft dependency imported: xgboost: 1.7.1
+2024-12-10 14:12:57,708:INFO:Soft dependency imported: catboost: 1.2.7
+2024-12-10 14:12:57,709:INFO:setup() successfully completed in 5.14s...............
+2024-12-10 14:12:57,710:INFO:Initializing compare_models()
+2024-12-10 14:12:57,710:INFO:compare_models(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016EDE722730>, include=None, fold=None, round=4, cross_validation=True, sort=R2, n_select=1, budget_time=None, turbo=True, errors=ignore, fit_kwargs=None, groups=None, experiment_custom_tags=None, probability_threshold=None, verbose=True, parallel=None, caller_params={'self': <pycaret.regression.oop.RegressionExperiment object at 0x0000016EDE722730>, 'include': None, 'exclude': None, 'fold': None, 'round': 4, 'cross_validation': True, 'sort': 'R2', 'n_select': 1, 'budget_time': None, 'turbo': True, 'errors': 'ignore', 'fit_kwargs': None, 'groups': None, 'experiment_custom_tags': None, 'engine': None, 'verbose': True, 'parallel': None, '__class__': <class 'pycaret.regression.oop.RegressionExperiment'>}, exclude=None)
+2024-12-10 14:12:57,710:INFO:Checking exceptions
+2024-12-10 14:12:57,719:INFO:Preparing display monitor
+2024-12-10 14:12:57,744:INFO:Initializing Linear Regression
+2024-12-10 14:12:57,744:INFO:Total runtime is 0.0 minutes
+2024-12-10 14:12:57,746:INFO:SubProcess create_model() called ==================================
+2024-12-10 14:12:57,747:INFO:Initializing create_model()
+2024-12-10 14:12:57,747:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016EDE722730>, estimator=lr, fold=KFold(n_splits=5, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000016EE2ED7AF0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-12-10 14:12:57,747:INFO:Checking exceptions
+2024-12-10 14:12:57,747:INFO:Importing libraries
+2024-12-10 14:12:57,747:INFO:Copying training dataset
+2024-12-10 14:12:57,770:INFO:Defining folds
+2024-12-10 14:12:57,770:INFO:Declaring metric variables
+2024-12-10 14:12:57,772:INFO:Importing untrained model
+2024-12-10 14:12:57,774:INFO:Linear Regression Imported successfully
+2024-12-10 14:12:57,779:INFO:Starting cross validation
+2024-12-10 14:12:57,784:INFO:Cross validating with KFold(n_splits=5, random_state=None, shuffle=False), n_jobs=1
+2024-12-10 14:12:58,294:INFO:Calculating mean and std
+2024-12-10 14:12:58,294:INFO:Creating metrics dataframe
+2024-12-10 14:12:58,295:INFO:Uploading results into container
+2024-12-10 14:12:58,296:INFO:Uploading model into container now
+2024-12-10 14:12:58,296:INFO:_master_model_container: 1
+2024-12-10 14:12:58,296:INFO:_display_container: 2
+2024-12-10 14:12:58,296:INFO:LinearRegression(n_jobs=-1)
+2024-12-10 14:12:58,296:INFO:create_model() successfully completed......................................
+2024-12-10 14:12:58,378:INFO:SubProcess create_model() end ==================================
+2024-12-10 14:12:58,378:INFO:Creating metrics dataframe
+2024-12-10 14:12:58,383:INFO:Initializing Lasso Regression
+2024-12-10 14:12:58,383:INFO:Total runtime is 0.010645520687103272 minutes
+2024-12-10 14:12:58,385:INFO:SubProcess create_model() called ==================================
+2024-12-10 14:12:58,385:INFO:Initializing create_model()
+2024-12-10 14:12:58,385:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016EDE722730>, estimator=lasso, fold=KFold(n_splits=5, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000016EE2ED7AF0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-12-10 14:12:58,385:INFO:Checking exceptions
+2024-12-10 14:12:58,385:INFO:Importing libraries
+2024-12-10 14:12:58,385:INFO:Copying training dataset
+2024-12-10 14:12:58,406:INFO:Defining folds
+2024-12-10 14:12:58,407:INFO:Declaring metric variables
+2024-12-10 14:12:58,409:INFO:Importing untrained model
+2024-12-10 14:12:58,411:INFO:Lasso Regression Imported successfully
+2024-12-10 14:12:58,416:INFO:Starting cross validation
+2024-12-10 14:12:58,418:INFO:Cross validating with KFold(n_splits=5, random_state=None, shuffle=False), n_jobs=1
+2024-12-10 14:12:58,856:INFO:Calculating mean and std
+2024-12-10 14:12:58,857:INFO:Creating metrics dataframe
+2024-12-10 14:12:58,858:INFO:Uploading results into container
+2024-12-10 14:12:58,858:INFO:Uploading model into container now
+2024-12-10 14:12:58,859:INFO:_master_model_container: 2
+2024-12-10 14:12:58,859:INFO:_display_container: 2
+2024-12-10 14:12:58,859:INFO:Lasso(random_state=123)
+2024-12-10 14:12:58,859:INFO:create_model() successfully completed......................................
+2024-12-10 14:12:58,938:INFO:SubProcess create_model() end ==================================
+2024-12-10 14:12:58,938:INFO:Creating metrics dataframe
+2024-12-10 14:12:58,943:INFO:Initializing Ridge Regression
+2024-12-10 14:12:58,943:INFO:Total runtime is 0.01997909148534139 minutes
+2024-12-10 14:12:58,945:INFO:SubProcess create_model() called ==================================
+2024-12-10 14:12:58,945:INFO:Initializing create_model()
+2024-12-10 14:12:58,945:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016EDE722730>, estimator=ridge, fold=KFold(n_splits=5, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000016EE2ED7AF0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-12-10 14:12:58,945:INFO:Checking exceptions
+2024-12-10 14:12:58,945:INFO:Importing libraries
+2024-12-10 14:12:58,945:INFO:Copying training dataset
+2024-12-10 14:12:58,967:INFO:Defining folds
+2024-12-10 14:12:58,967:INFO:Declaring metric variables
+2024-12-10 14:12:58,969:INFO:Importing untrained model
+2024-12-10 14:12:58,972:INFO:Ridge Regression Imported successfully
+2024-12-10 14:12:58,977:INFO:Starting cross validation
+2024-12-10 14:12:58,978:INFO:Cross validating with KFold(n_splits=5, random_state=None, shuffle=False), n_jobs=1
+2024-12-10 14:12:59,412:INFO:Calculating mean and std
+2024-12-10 14:12:59,413:INFO:Creating metrics dataframe
+2024-12-10 14:12:59,414:INFO:Uploading results into container
+2024-12-10 14:12:59,414:INFO:Uploading model into container now
+2024-12-10 14:12:59,414:INFO:_master_model_container: 3
+2024-12-10 14:12:59,415:INFO:_display_container: 2
+2024-12-10 14:12:59,415:INFO:Ridge(random_state=123)
+2024-12-10 14:12:59,415:INFO:create_model() successfully completed......................................
+2024-12-10 14:12:59,494:INFO:SubProcess create_model() end ==================================
+2024-12-10 14:12:59,494:INFO:Creating metrics dataframe
+2024-12-10 14:12:59,499:INFO:Initializing Elastic Net
+2024-12-10 14:12:59,499:INFO:Total runtime is 0.029238661130269367 minutes
+2024-12-10 14:12:59,502:INFO:SubProcess create_model() called ==================================
+2024-12-10 14:12:59,502:INFO:Initializing create_model()
+2024-12-10 14:12:59,502:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016EDE722730>, estimator=en, fold=KFold(n_splits=5, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000016EE2ED7AF0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-12-10 14:12:59,502:INFO:Checking exceptions
+2024-12-10 14:12:59,502:INFO:Importing libraries
+2024-12-10 14:12:59,502:INFO:Copying training dataset
+2024-12-10 14:12:59,525:INFO:Defining folds
+2024-12-10 14:12:59,525:INFO:Declaring metric variables
+2024-12-10 14:12:59,527:INFO:Importing untrained model
+2024-12-10 14:12:59,529:INFO:Elastic Net Imported successfully
+2024-12-10 14:12:59,534:INFO:Starting cross validation
+2024-12-10 14:12:59,535:INFO:Cross validating with KFold(n_splits=5, random_state=None, shuffle=False), n_jobs=1
+2024-12-10 14:12:59,978:INFO:Calculating mean and std
+2024-12-10 14:12:59,979:INFO:Creating metrics dataframe
+2024-12-10 14:12:59,980:INFO:Uploading results into container
+2024-12-10 14:12:59,980:INFO:Uploading model into container now
+2024-12-10 14:12:59,980:INFO:_master_model_container: 4
+2024-12-10 14:12:59,980:INFO:_display_container: 2
+2024-12-10 14:12:59,981:INFO:ElasticNet(random_state=123)
+2024-12-10 14:12:59,981:INFO:create_model() successfully completed......................................
+2024-12-10 14:13:00,065:INFO:SubProcess create_model() end ==================================
+2024-12-10 14:13:00,065:INFO:Creating metrics dataframe
+2024-12-10 14:13:00,070:INFO:Initializing Least Angle Regression
+2024-12-10 14:13:00,071:INFO:Total runtime is 0.03877480030059814 minutes
+2024-12-10 14:13:00,073:INFO:SubProcess create_model() called ==================================
+2024-12-10 14:13:00,073:INFO:Initializing create_model()
+2024-12-10 14:13:00,073:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016EDE722730>, estimator=lar, fold=KFold(n_splits=5, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000016EE2ED7AF0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-12-10 14:13:00,073:INFO:Checking exceptions
+2024-12-10 14:13:00,073:INFO:Importing libraries
+2024-12-10 14:13:00,073:INFO:Copying training dataset
+2024-12-10 14:13:00,096:INFO:Defining folds
+2024-12-10 14:13:00,096:INFO:Declaring metric variables
+2024-12-10 14:13:00,099:INFO:Importing untrained model
+2024-12-10 14:13:00,101:INFO:Least Angle Regression Imported successfully
+2024-12-10 14:13:00,106:INFO:Starting cross validation
+2024-12-10 14:13:00,107:INFO:Cross validating with KFold(n_splits=5, random_state=None, shuffle=False), n_jobs=1
+2024-12-10 14:13:00,279:WARNING:Regressors in active set degenerate. Dropping a regressor, after 118 iterations, i.e. alpha=6.124e-01, with an active set of 61 regressors, and the smallest cholesky pivot element being 2.220e-16. Reduce max_iter or increase eps parameters.
+
+2024-12-10 14:13:00,280:WARNING:Regressors in active set degenerate. Dropping a regressor, after 125 iterations, i.e. alpha=5.568e+00, with an active set of 63 regressors, and the smallest cholesky pivot element being 2.220e-16. Reduce max_iter or increase eps parameters.
+
+2024-12-10 14:13:00,280:WARNING:Regressors in active set degenerate. Dropping a regressor, after 125 iterations, i.e. alpha=2.359e-01, with an active set of 63 regressors, and the smallest cholesky pivot element being 2.220e-16. Reduce max_iter or increase eps parameters.
+
+2024-12-10 14:13:00,371:WARNING:Regressors in active set degenerate. Dropping a regressor, after 61 iterations, i.e. alpha=8.275e-03, with an active set of 56 regressors, and the smallest cholesky pivot element being 2.220e-16. Reduce max_iter or increase eps parameters.
+
+2024-12-10 14:13:00,373:WARNING:Regressors in active set degenerate. Dropping a regressor, after 73 iterations, i.e. alpha=8.914e-01, with an active set of 62 regressors, and the smallest cholesky pivot element being 2.220e-16. Reduce max_iter or increase eps parameters.
+
+2024-12-10 14:13:00,373:WARNING:Regressors in active set degenerate. Dropping a regressor, after 74 iterations, i.e. alpha=3.872e-02, with an active set of 63 regressors, and the smallest cholesky pivot element being 2.220e-16. Reduce max_iter or increase eps parameters.
+
+2024-12-10 14:13:00,373:WARNING:Regressors in active set degenerate. Dropping a regressor, after 74 iterations, i.e. alpha=2.974e-02, with an active set of 63 regressors, and the smallest cholesky pivot element being 2.220e-16. Reduce max_iter or increase eps parameters.
+
+2024-12-10 14:13:00,464:WARNING:Regressors in active set degenerate. Dropping a regressor, after 74 iterations, i.e. alpha=2.942e-03, with an active set of 63 regressors, and the smallest cholesky pivot element being 2.220e-16. Reduce max_iter or increase eps parameters.
+
+2024-12-10 14:13:00,464:WARNING:Regressors in active set degenerate. Dropping a regressor, after 74 iterations, i.e. alpha=1.925e-04, with an active set of 63 regressors, and the smallest cholesky pivot element being 2.220e-16. Reduce max_iter or increase eps parameters.
+
+2024-12-10 14:13:00,575:INFO:Calculating mean and std
+2024-12-10 14:13:00,576:INFO:Creating metrics dataframe
+2024-12-10 14:13:00,577:INFO:Uploading results into container
+2024-12-10 14:13:00,578:INFO:Uploading model into container now
+2024-12-10 14:13:00,578:INFO:_master_model_container: 5
+2024-12-10 14:13:00,578:INFO:_display_container: 2
+2024-12-10 14:13:00,578:INFO:Lars(random_state=123)
+2024-12-10 14:13:00,578:INFO:create_model() successfully completed......................................
+2024-12-10 14:13:00,657:INFO:SubProcess create_model() end ==================================
+2024-12-10 14:13:00,657:INFO:Creating metrics dataframe
+2024-12-10 14:13:00,663:INFO:Initializing Lasso Least Angle Regression
+2024-12-10 14:13:00,663:INFO:Total runtime is 0.04864043792088826 minutes
+2024-12-10 14:13:00,666:INFO:SubProcess create_model() called ==================================
+2024-12-10 14:13:00,666:INFO:Initializing create_model()
+2024-12-10 14:13:00,666:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016EDE722730>, estimator=llar, fold=KFold(n_splits=5, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000016EE2ED7AF0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-12-10 14:13:00,666:INFO:Checking exceptions
+2024-12-10 14:13:00,666:INFO:Importing libraries
+2024-12-10 14:13:00,666:INFO:Copying training dataset
+2024-12-10 14:13:00,689:INFO:Defining folds
+2024-12-10 14:13:00,689:INFO:Declaring metric variables
+2024-12-10 14:13:00,691:INFO:Importing untrained model
+2024-12-10 14:13:00,694:INFO:Lasso Least Angle Regression Imported successfully
+2024-12-10 14:13:00,699:INFO:Starting cross validation
+2024-12-10 14:13:00,700:INFO:Cross validating with KFold(n_splits=5, random_state=None, shuffle=False), n_jobs=1
+2024-12-10 14:13:01,134:INFO:Calculating mean and std
+2024-12-10 14:13:01,135:INFO:Creating metrics dataframe
+2024-12-10 14:13:01,136:INFO:Uploading results into container
+2024-12-10 14:13:01,136:INFO:Uploading model into container now
+2024-12-10 14:13:01,137:INFO:_master_model_container: 6
+2024-12-10 14:13:01,137:INFO:_display_container: 2
+2024-12-10 14:13:01,137:INFO:LassoLars(random_state=123)
+2024-12-10 14:13:01,137:INFO:create_model() successfully completed......................................
+2024-12-10 14:13:01,223:INFO:SubProcess create_model() end ==================================
+2024-12-10 14:13:01,223:INFO:Creating metrics dataframe
+2024-12-10 14:13:01,229:INFO:Initializing Orthogonal Matching Pursuit
+2024-12-10 14:13:01,229:INFO:Total runtime is 0.05807865460713704 minutes
+2024-12-10 14:13:01,231:INFO:SubProcess create_model() called ==================================
+2024-12-10 14:13:01,231:INFO:Initializing create_model()
+2024-12-10 14:13:01,232:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016EDE722730>, estimator=omp, fold=KFold(n_splits=5, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000016EE2ED7AF0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-12-10 14:13:01,232:INFO:Checking exceptions
+2024-12-10 14:13:01,232:INFO:Importing libraries
+2024-12-10 14:13:01,232:INFO:Copying training dataset
+2024-12-10 14:13:01,254:INFO:Defining folds
+2024-12-10 14:13:01,254:INFO:Declaring metric variables
+2024-12-10 14:13:01,256:INFO:Importing untrained model
+2024-12-10 14:13:01,259:INFO:Orthogonal Matching Pursuit Imported successfully
+2024-12-10 14:13:01,264:INFO:Starting cross validation
+2024-12-10 14:13:01,265:INFO:Cross validating with KFold(n_splits=5, random_state=None, shuffle=False), n_jobs=1
+2024-12-10 14:13:01,705:INFO:Calculating mean and std
+2024-12-10 14:13:01,706:INFO:Creating metrics dataframe
+2024-12-10 14:13:01,707:INFO:Uploading results into container
+2024-12-10 14:13:01,707:INFO:Uploading model into container now
+2024-12-10 14:13:01,708:INFO:_master_model_container: 7
+2024-12-10 14:13:01,708:INFO:_display_container: 2
+2024-12-10 14:13:01,708:INFO:OrthogonalMatchingPursuit()
+2024-12-10 14:13:01,708:INFO:create_model() successfully completed......................................
+2024-12-10 14:13:01,789:INFO:SubProcess create_model() end ==================================
+2024-12-10 14:13:01,789:INFO:Creating metrics dataframe
+2024-12-10 14:13:01,795:INFO:Initializing Bayesian Ridge
+2024-12-10 14:13:01,795:INFO:Total runtime is 0.06750907897949218 minutes
+2024-12-10 14:13:01,797:INFO:SubProcess create_model() called ==================================
+2024-12-10 14:13:01,797:INFO:Initializing create_model()
+2024-12-10 14:13:01,797:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016EDE722730>, estimator=br, fold=KFold(n_splits=5, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000016EE2ED7AF0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-12-10 14:13:01,797:INFO:Checking exceptions
+2024-12-10 14:13:01,798:INFO:Importing libraries
+2024-12-10 14:13:01,798:INFO:Copying training dataset
+2024-12-10 14:13:01,819:INFO:Defining folds
+2024-12-10 14:13:01,819:INFO:Declaring metric variables
+2024-12-10 14:13:01,822:INFO:Importing untrained model
+2024-12-10 14:13:01,824:INFO:Bayesian Ridge Imported successfully
+2024-12-10 14:13:01,829:INFO:Starting cross validation
+2024-12-10 14:13:01,830:INFO:Cross validating with KFold(n_splits=5, random_state=None, shuffle=False), n_jobs=1
+2024-12-10 14:13:02,324:INFO:Calculating mean and std
+2024-12-10 14:13:02,325:INFO:Creating metrics dataframe
+2024-12-10 14:13:02,326:INFO:Uploading results into container
+2024-12-10 14:13:02,327:INFO:Uploading model into container now
+2024-12-10 14:13:02,327:INFO:_master_model_container: 8
+2024-12-10 14:13:02,327:INFO:_display_container: 2
+2024-12-10 14:13:02,327:INFO:BayesianRidge()
+2024-12-10 14:13:02,327:INFO:create_model() successfully completed......................................
+2024-12-10 14:13:02,409:INFO:SubProcess create_model() end ==================================
+2024-12-10 14:13:02,409:INFO:Creating metrics dataframe
+2024-12-10 14:13:02,415:INFO:Initializing Passive Aggressive Regressor
+2024-12-10 14:13:02,416:INFO:Total runtime is 0.077864138285319 minutes
+2024-12-10 14:13:02,418:INFO:SubProcess create_model() called ==================================
+2024-12-10 14:13:02,418:INFO:Initializing create_model()
+2024-12-10 14:13:02,418:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016EDE722730>, estimator=par, fold=KFold(n_splits=5, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000016EE2ED7AF0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-12-10 14:13:02,418:INFO:Checking exceptions
+2024-12-10 14:13:02,418:INFO:Importing libraries
+2024-12-10 14:13:02,418:INFO:Copying training dataset
+2024-12-10 14:13:02,440:INFO:Defining folds
+2024-12-10 14:13:02,440:INFO:Declaring metric variables
+2024-12-10 14:13:02,442:INFO:Importing untrained model
+2024-12-10 14:13:02,445:INFO:Passive Aggressive Regressor Imported successfully
+2024-12-10 14:13:02,449:INFO:Starting cross validation
+2024-12-10 14:13:02,450:INFO:Cross validating with KFold(n_splits=5, random_state=None, shuffle=False), n_jobs=1
+2024-12-10 14:13:02,961:INFO:Calculating mean and std
+2024-12-10 14:13:02,962:INFO:Creating metrics dataframe
+2024-12-10 14:13:02,964:INFO:Uploading results into container
+2024-12-10 14:13:02,964:INFO:Uploading model into container now
+2024-12-10 14:13:02,964:INFO:_master_model_container: 9
+2024-12-10 14:13:02,964:INFO:_display_container: 2
+2024-12-10 14:13:02,964:INFO:PassiveAggressiveRegressor(random_state=123)
+2024-12-10 14:13:02,965:INFO:create_model() successfully completed......................................
+2024-12-10 14:13:03,044:INFO:SubProcess create_model() end ==================================
+2024-12-10 14:13:03,044:INFO:Creating metrics dataframe
+2024-12-10 14:13:03,050:INFO:Initializing Huber Regressor
+2024-12-10 14:13:03,050:INFO:Total runtime is 0.08843321005503336 minutes
+2024-12-10 14:13:03,052:INFO:SubProcess create_model() called ==================================
+2024-12-10 14:13:03,052:INFO:Initializing create_model()
+2024-12-10 14:13:03,052:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016EDE722730>, estimator=huber, fold=KFold(n_splits=5, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000016EE2ED7AF0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-12-10 14:13:03,052:INFO:Checking exceptions
+2024-12-10 14:13:03,053:INFO:Importing libraries
+2024-12-10 14:13:03,053:INFO:Copying training dataset
+2024-12-10 14:13:03,076:INFO:Defining folds
+2024-12-10 14:13:03,076:INFO:Declaring metric variables
+2024-12-10 14:13:03,078:INFO:Importing untrained model
+2024-12-10 14:13:03,081:INFO:Huber Regressor Imported successfully
+2024-12-10 14:13:03,086:INFO:Starting cross validation
+2024-12-10 14:13:03,087:INFO:Cross validating with KFold(n_splits=5, random_state=None, shuffle=False), n_jobs=1
+2024-12-10 14:13:03,442:WARNING:lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+
+2024-12-10 14:13:03,782:WARNING:lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+
+2024-12-10 14:13:04,143:WARNING:lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+
+2024-12-10 14:13:04,506:WARNING:lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+
+2024-12-10 14:13:04,842:WARNING:lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+
+2024-12-10 14:13:04,862:INFO:Calculating mean and std
+2024-12-10 14:13:04,863:INFO:Creating metrics dataframe
+2024-12-10 14:13:04,864:INFO:Uploading results into container
+2024-12-10 14:13:04,865:INFO:Uploading model into container now
+2024-12-10 14:13:04,865:INFO:_master_model_container: 10
+2024-12-10 14:13:04,865:INFO:_display_container: 2
+2024-12-10 14:13:04,865:INFO:HuberRegressor()
+2024-12-10 14:13:04,865:INFO:create_model() successfully completed......................................
+2024-12-10 14:13:04,946:INFO:SubProcess create_model() end ==================================
+2024-12-10 14:13:04,946:INFO:Creating metrics dataframe
+2024-12-10 14:13:04,953:INFO:Initializing K Neighbors Regressor
+2024-12-10 14:13:04,953:INFO:Total runtime is 0.12014369964599608 minutes
+2024-12-10 14:13:04,956:INFO:SubProcess create_model() called ==================================
+2024-12-10 14:13:04,956:INFO:Initializing create_model()
+2024-12-10 14:13:04,956:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016EDE722730>, estimator=knn, fold=KFold(n_splits=5, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000016EE2ED7AF0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-12-10 14:13:04,956:INFO:Checking exceptions
+2024-12-10 14:13:04,956:INFO:Importing libraries
+2024-12-10 14:13:04,956:INFO:Copying training dataset
+2024-12-10 14:13:04,977:INFO:Defining folds
+2024-12-10 14:13:04,977:INFO:Declaring metric variables
+2024-12-10 14:13:04,980:INFO:Importing untrained model
+2024-12-10 14:13:04,982:INFO:K Neighbors Regressor Imported successfully
+2024-12-10 14:13:04,987:INFO:Starting cross validation
+2024-12-10 14:13:04,988:INFO:Cross validating with KFold(n_splits=5, random_state=None, shuffle=False), n_jobs=1
+2024-12-10 14:13:05,108:WARNING:Metric 'make_scorer(root_mean_squared_log_error, greater_is_better=False, response_method='predict')' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\metrics.py", line 196, in _score
+    return super()._score(
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\metrics\_scorer.py", line 345, in _score
+    y_pred = method_caller(
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\metrics\_scorer.py", line 87, in _cached_call
+    result, _ = _get_response_values(
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\utils\_response.py", line 238, in _get_response_values
+    y_pred, pos_label = prediction_method(X), None
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\pipeline.py", line 330, in predict
+    y = self.steps[-1][-1].predict(X, **params)
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\neighbors\_regression.py", line 242, in predict
+    neigh_ind = self.kneighbors(X, return_distance=False)
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\neighbors\_base.py", line 850, in kneighbors
+    results = ArgKmin.compute(
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\metrics\_pairwise_distances_reduction\_dispatcher.py", line 278, in compute
+    return ArgKmin64.compute(
+  File "sklearn\\metrics\\_pairwise_distances_reduction\\_argkmin.pyx", line 90, in sklearn.metrics._pairwise_distances_reduction._argkmin.ArgKmin64.compute
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\utils\fixes.py", line 94, in threadpool_limits
+    return threadpoolctl.threadpool_limits(limits=limits, user_api=user_api)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 171, in __init__
+    self._original_info = self._set_threadpool_limits()
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 268, in _set_threadpool_limits
+    modules = _ThreadpoolInfo(prefixes=self._prefixes,
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 340, in __init__
+    self._load_modules()
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 373, in _load_modules
+    self._find_modules_with_enum_process_module_ex()
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 485, in _find_modules_with_enum_process_module_ex
+    self._make_module_from_path(filepath)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 515, in _make_module_from_path
+    module = module_class(filepath, prefix, user_api, internal_api)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 606, in __init__
+    self.version = self.get_version()
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 646, in get_version
+    config = get_config().split()
+AttributeError: 'NoneType' object has no attribute 'split'
+
+
+2024-12-10 14:13:05,111:WARNING:Metric 'make_scorer(mean_absolute_percentage_error, greater_is_better=False, response_method='predict')' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\metrics.py", line 196, in _score
+    return super()._score(
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\metrics\_scorer.py", line 345, in _score
+    y_pred = method_caller(
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\metrics\_scorer.py", line 87, in _cached_call
+    result, _ = _get_response_values(
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\utils\_response.py", line 238, in _get_response_values
+    y_pred, pos_label = prediction_method(X), None
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\pipeline.py", line 330, in predict
+    y = self.steps[-1][-1].predict(X, **params)
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\neighbors\_regression.py", line 242, in predict
+    neigh_ind = self.kneighbors(X, return_distance=False)
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\neighbors\_base.py", line 850, in kneighbors
+    results = ArgKmin.compute(
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\metrics\_pairwise_distances_reduction\_dispatcher.py", line 278, in compute
+    return ArgKmin64.compute(
+  File "sklearn\\metrics\\_pairwise_distances_reduction\\_argkmin.pyx", line 90, in sklearn.metrics._pairwise_distances_reduction._argkmin.ArgKmin64.compute
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\utils\fixes.py", line 94, in threadpool_limits
+    return threadpoolctl.threadpool_limits(limits=limits, user_api=user_api)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 171, in __init__
+    self._original_info = self._set_threadpool_limits()
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 268, in _set_threadpool_limits
+    modules = _ThreadpoolInfo(prefixes=self._prefixes,
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 340, in __init__
+    self._load_modules()
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 373, in _load_modules
+    self._find_modules_with_enum_process_module_ex()
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 485, in _find_modules_with_enum_process_module_ex
+    self._make_module_from_path(filepath)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 515, in _make_module_from_path
+    module = module_class(filepath, prefix, user_api, internal_api)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 606, in __init__
+    self.version = self.get_version()
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 646, in get_version
+    config = get_config().split()
+AttributeError: 'NoneType' object has no attribute 'split'
+
+
+2024-12-10 14:13:05,111:WARNING:Scoring failed. The score on this train-test partition for these parameters will be set to 0.0. Details: 
+Traceback (most recent call last):
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\metrics\_scorer.py", line 137, in __call__
+    score = scorer._score(
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\metrics\_scorer.py", line 345, in _score
+    y_pred = method_caller(
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\metrics\_scorer.py", line 87, in _cached_call
+    result, _ = _get_response_values(
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\utils\_response.py", line 238, in _get_response_values
+    y_pred, pos_label = prediction_method(X), None
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\pipeline.py", line 330, in predict
+    y = self.steps[-1][-1].predict(X, **params)
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\neighbors\_regression.py", line 242, in predict
+    neigh_ind = self.kneighbors(X, return_distance=False)
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\neighbors\_base.py", line 850, in kneighbors
+    results = ArgKmin.compute(
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\metrics\_pairwise_distances_reduction\_dispatcher.py", line 278, in compute
+    return ArgKmin64.compute(
+  File "sklearn\\metrics\\_pairwise_distances_reduction\\_argkmin.pyx", line 90, in sklearn.metrics._pairwise_distances_reduction._argkmin.ArgKmin64.compute
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\utils\fixes.py", line 94, in threadpool_limits
+    return threadpoolctl.threadpool_limits(limits=limits, user_api=user_api)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 171, in __init__
+    self._original_info = self._set_threadpool_limits()
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 268, in _set_threadpool_limits
+    modules = _ThreadpoolInfo(prefixes=self._prefixes,
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 340, in __init__
+    self._load_modules()
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 373, in _load_modules
+    self._find_modules_with_enum_process_module_ex()
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 485, in _find_modules_with_enum_process_module_ex
+    self._make_module_from_path(filepath)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 515, in _make_module_from_path
+    module = module_class(filepath, prefix, user_api, internal_api)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 606, in __init__
+    self.version = self.get_version()
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 646, in get_version
+    config = get_config().split()
+AttributeError: 'NoneType' object has no attribute 'split'
+
+
+2024-12-10 14:13:05,208:WARNING:Metric 'make_scorer(root_mean_squared_log_error, greater_is_better=False, response_method='predict')' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\metrics.py", line 196, in _score
+    return super()._score(
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\metrics\_scorer.py", line 345, in _score
+    y_pred = method_caller(
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\metrics\_scorer.py", line 87, in _cached_call
+    result, _ = _get_response_values(
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\utils\_response.py", line 238, in _get_response_values
+    y_pred, pos_label = prediction_method(X), None
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\pipeline.py", line 330, in predict
+    y = self.steps[-1][-1].predict(X, **params)
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\neighbors\_regression.py", line 242, in predict
+    neigh_ind = self.kneighbors(X, return_distance=False)
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\neighbors\_base.py", line 850, in kneighbors
+    results = ArgKmin.compute(
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\metrics\_pairwise_distances_reduction\_dispatcher.py", line 278, in compute
+    return ArgKmin64.compute(
+  File "sklearn\\metrics\\_pairwise_distances_reduction\\_argkmin.pyx", line 90, in sklearn.metrics._pairwise_distances_reduction._argkmin.ArgKmin64.compute
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\utils\fixes.py", line 94, in threadpool_limits
+    return threadpoolctl.threadpool_limits(limits=limits, user_api=user_api)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 171, in __init__
+    self._original_info = self._set_threadpool_limits()
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 268, in _set_threadpool_limits
+    modules = _ThreadpoolInfo(prefixes=self._prefixes,
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 340, in __init__
+    self._load_modules()
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 373, in _load_modules
+    self._find_modules_with_enum_process_module_ex()
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 485, in _find_modules_with_enum_process_module_ex
+    self._make_module_from_path(filepath)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 515, in _make_module_from_path
+    module = module_class(filepath, prefix, user_api, internal_api)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 606, in __init__
+    self.version = self.get_version()
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 646, in get_version
+    config = get_config().split()
+AttributeError: 'NoneType' object has no attribute 'split'
+
+
+2024-12-10 14:13:05,212:WARNING:Metric 'make_scorer(mean_absolute_percentage_error, greater_is_better=False, response_method='predict')' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\metrics.py", line 196, in _score
+    return super()._score(
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\metrics\_scorer.py", line 345, in _score
+    y_pred = method_caller(
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\metrics\_scorer.py", line 87, in _cached_call
+    result, _ = _get_response_values(
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\utils\_response.py", line 238, in _get_response_values
+    y_pred, pos_label = prediction_method(X), None
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\pipeline.py", line 330, in predict
+    y = self.steps[-1][-1].predict(X, **params)
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\neighbors\_regression.py", line 242, in predict
+    neigh_ind = self.kneighbors(X, return_distance=False)
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\neighbors\_base.py", line 850, in kneighbors
+    results = ArgKmin.compute(
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\metrics\_pairwise_distances_reduction\_dispatcher.py", line 278, in compute
+    return ArgKmin64.compute(
+  File "sklearn\\metrics\\_pairwise_distances_reduction\\_argkmin.pyx", line 90, in sklearn.metrics._pairwise_distances_reduction._argkmin.ArgKmin64.compute
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\utils\fixes.py", line 94, in threadpool_limits
+    return threadpoolctl.threadpool_limits(limits=limits, user_api=user_api)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 171, in __init__
+    self._original_info = self._set_threadpool_limits()
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 268, in _set_threadpool_limits
+    modules = _ThreadpoolInfo(prefixes=self._prefixes,
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 340, in __init__
+    self._load_modules()
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 373, in _load_modules
+    self._find_modules_with_enum_process_module_ex()
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 485, in _find_modules_with_enum_process_module_ex
+    self._make_module_from_path(filepath)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 515, in _make_module_from_path
+    module = module_class(filepath, prefix, user_api, internal_api)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 606, in __init__
+    self.version = self.get_version()
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 646, in get_version
+    config = get_config().split()
+AttributeError: 'NoneType' object has no attribute 'split'
+
+
+2024-12-10 14:13:05,212:WARNING:Scoring failed. The score on this train-test partition for these parameters will be set to 0.0. Details: 
+Traceback (most recent call last):
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\metrics\_scorer.py", line 137, in __call__
+    score = scorer._score(
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\metrics\_scorer.py", line 345, in _score
+    y_pred = method_caller(
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\metrics\_scorer.py", line 87, in _cached_call
+    result, _ = _get_response_values(
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\utils\_response.py", line 238, in _get_response_values
+    y_pred, pos_label = prediction_method(X), None
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\pipeline.py", line 330, in predict
+    y = self.steps[-1][-1].predict(X, **params)
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\neighbors\_regression.py", line 242, in predict
+    neigh_ind = self.kneighbors(X, return_distance=False)
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\neighbors\_base.py", line 850, in kneighbors
+    results = ArgKmin.compute(
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\metrics\_pairwise_distances_reduction\_dispatcher.py", line 278, in compute
+    return ArgKmin64.compute(
+  File "sklearn\\metrics\\_pairwise_distances_reduction\\_argkmin.pyx", line 90, in sklearn.metrics._pairwise_distances_reduction._argkmin.ArgKmin64.compute
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\utils\fixes.py", line 94, in threadpool_limits
+    return threadpoolctl.threadpool_limits(limits=limits, user_api=user_api)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 171, in __init__
+    self._original_info = self._set_threadpool_limits()
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 268, in _set_threadpool_limits
+    modules = _ThreadpoolInfo(prefixes=self._prefixes,
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 340, in __init__
+    self._load_modules()
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 373, in _load_modules
+    self._find_modules_with_enum_process_module_ex()
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 485, in _find_modules_with_enum_process_module_ex
+    self._make_module_from_path(filepath)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 515, in _make_module_from_path
+    module = module_class(filepath, prefix, user_api, internal_api)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 606, in __init__
+    self.version = self.get_version()
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 646, in get_version
+    config = get_config().split()
+AttributeError: 'NoneType' object has no attribute 'split'
+
+
+2024-12-10 14:13:05,310:WARNING:Metric 'make_scorer(root_mean_squared_log_error, greater_is_better=False, response_method='predict')' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\metrics.py", line 196, in _score
+    return super()._score(
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\metrics\_scorer.py", line 345, in _score
+    y_pred = method_caller(
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\metrics\_scorer.py", line 87, in _cached_call
+    result, _ = _get_response_values(
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\utils\_response.py", line 238, in _get_response_values
+    y_pred, pos_label = prediction_method(X), None
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\pipeline.py", line 330, in predict
+    y = self.steps[-1][-1].predict(X, **params)
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\neighbors\_regression.py", line 242, in predict
+    neigh_ind = self.kneighbors(X, return_distance=False)
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\neighbors\_base.py", line 850, in kneighbors
+    results = ArgKmin.compute(
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\metrics\_pairwise_distances_reduction\_dispatcher.py", line 278, in compute
+    return ArgKmin64.compute(
+  File "sklearn\\metrics\\_pairwise_distances_reduction\\_argkmin.pyx", line 90, in sklearn.metrics._pairwise_distances_reduction._argkmin.ArgKmin64.compute
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\utils\fixes.py", line 94, in threadpool_limits
+    return threadpoolctl.threadpool_limits(limits=limits, user_api=user_api)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 171, in __init__
+    self._original_info = self._set_threadpool_limits()
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 268, in _set_threadpool_limits
+    modules = _ThreadpoolInfo(prefixes=self._prefixes,
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 340, in __init__
+    self._load_modules()
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 373, in _load_modules
+    self._find_modules_with_enum_process_module_ex()
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 485, in _find_modules_with_enum_process_module_ex
+    self._make_module_from_path(filepath)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 515, in _make_module_from_path
+    module = module_class(filepath, prefix, user_api, internal_api)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 606, in __init__
+    self.version = self.get_version()
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 646, in get_version
+    config = get_config().split()
+AttributeError: 'NoneType' object has no attribute 'split'
+
+
+2024-12-10 14:13:05,313:WARNING:Metric 'make_scorer(mean_absolute_percentage_error, greater_is_better=False, response_method='predict')' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\metrics.py", line 196, in _score
+    return super()._score(
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\metrics\_scorer.py", line 345, in _score
+    y_pred = method_caller(
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\metrics\_scorer.py", line 87, in _cached_call
+    result, _ = _get_response_values(
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\utils\_response.py", line 238, in _get_response_values
+    y_pred, pos_label = prediction_method(X), None
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\pipeline.py", line 330, in predict
+    y = self.steps[-1][-1].predict(X, **params)
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\neighbors\_regression.py", line 242, in predict
+    neigh_ind = self.kneighbors(X, return_distance=False)
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\neighbors\_base.py", line 850, in kneighbors
+    results = ArgKmin.compute(
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\metrics\_pairwise_distances_reduction\_dispatcher.py", line 278, in compute
+    return ArgKmin64.compute(
+  File "sklearn\\metrics\\_pairwise_distances_reduction\\_argkmin.pyx", line 90, in sklearn.metrics._pairwise_distances_reduction._argkmin.ArgKmin64.compute
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\utils\fixes.py", line 94, in threadpool_limits
+    return threadpoolctl.threadpool_limits(limits=limits, user_api=user_api)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 171, in __init__
+    self._original_info = self._set_threadpool_limits()
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 268, in _set_threadpool_limits
+    modules = _ThreadpoolInfo(prefixes=self._prefixes,
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 340, in __init__
+    self._load_modules()
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 373, in _load_modules
+    self._find_modules_with_enum_process_module_ex()
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 485, in _find_modules_with_enum_process_module_ex
+    self._make_module_from_path(filepath)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 515, in _make_module_from_path
+    module = module_class(filepath, prefix, user_api, internal_api)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 606, in __init__
+    self.version = self.get_version()
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 646, in get_version
+    config = get_config().split()
+AttributeError: 'NoneType' object has no attribute 'split'
+
+
+2024-12-10 14:13:05,313:WARNING:Scoring failed. The score on this train-test partition for these parameters will be set to 0.0. Details: 
+Traceback (most recent call last):
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\metrics\_scorer.py", line 137, in __call__
+    score = scorer._score(
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\metrics\_scorer.py", line 345, in _score
+    y_pred = method_caller(
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\metrics\_scorer.py", line 87, in _cached_call
+    result, _ = _get_response_values(
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\utils\_response.py", line 238, in _get_response_values
+    y_pred, pos_label = prediction_method(X), None
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\pipeline.py", line 330, in predict
+    y = self.steps[-1][-1].predict(X, **params)
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\neighbors\_regression.py", line 242, in predict
+    neigh_ind = self.kneighbors(X, return_distance=False)
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\neighbors\_base.py", line 850, in kneighbors
+    results = ArgKmin.compute(
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\metrics\_pairwise_distances_reduction\_dispatcher.py", line 278, in compute
+    return ArgKmin64.compute(
+  File "sklearn\\metrics\\_pairwise_distances_reduction\\_argkmin.pyx", line 90, in sklearn.metrics._pairwise_distances_reduction._argkmin.ArgKmin64.compute
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\utils\fixes.py", line 94, in threadpool_limits
+    return threadpoolctl.threadpool_limits(limits=limits, user_api=user_api)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 171, in __init__
+    self._original_info = self._set_threadpool_limits()
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 268, in _set_threadpool_limits
+    modules = _ThreadpoolInfo(prefixes=self._prefixes,
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 340, in __init__
+    self._load_modules()
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 373, in _load_modules
+    self._find_modules_with_enum_process_module_ex()
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 485, in _find_modules_with_enum_process_module_ex
+    self._make_module_from_path(filepath)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 515, in _make_module_from_path
+    module = module_class(filepath, prefix, user_api, internal_api)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 606, in __init__
+    self.version = self.get_version()
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 646, in get_version
+    config = get_config().split()
+AttributeError: 'NoneType' object has no attribute 'split'
+
+
+2024-12-10 14:13:05,411:WARNING:Metric 'make_scorer(root_mean_squared_log_error, greater_is_better=False, response_method='predict')' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\metrics.py", line 196, in _score
+    return super()._score(
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\metrics\_scorer.py", line 345, in _score
+    y_pred = method_caller(
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\metrics\_scorer.py", line 87, in _cached_call
+    result, _ = _get_response_values(
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\utils\_response.py", line 238, in _get_response_values
+    y_pred, pos_label = prediction_method(X), None
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\pipeline.py", line 330, in predict
+    y = self.steps[-1][-1].predict(X, **params)
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\neighbors\_regression.py", line 242, in predict
+    neigh_ind = self.kneighbors(X, return_distance=False)
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\neighbors\_base.py", line 850, in kneighbors
+    results = ArgKmin.compute(
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\metrics\_pairwise_distances_reduction\_dispatcher.py", line 278, in compute
+    return ArgKmin64.compute(
+  File "sklearn\\metrics\\_pairwise_distances_reduction\\_argkmin.pyx", line 90, in sklearn.metrics._pairwise_distances_reduction._argkmin.ArgKmin64.compute
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\utils\fixes.py", line 94, in threadpool_limits
+    return threadpoolctl.threadpool_limits(limits=limits, user_api=user_api)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 171, in __init__
+    self._original_info = self._set_threadpool_limits()
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 268, in _set_threadpool_limits
+    modules = _ThreadpoolInfo(prefixes=self._prefixes,
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 340, in __init__
+    self._load_modules()
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 373, in _load_modules
+    self._find_modules_with_enum_process_module_ex()
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 485, in _find_modules_with_enum_process_module_ex
+    self._make_module_from_path(filepath)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 515, in _make_module_from_path
+    module = module_class(filepath, prefix, user_api, internal_api)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 606, in __init__
+    self.version = self.get_version()
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 646, in get_version
+    config = get_config().split()
+AttributeError: 'NoneType' object has no attribute 'split'
+
+
+2024-12-10 14:13:05,415:WARNING:Metric 'make_scorer(mean_absolute_percentage_error, greater_is_better=False, response_method='predict')' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\metrics.py", line 196, in _score
+    return super()._score(
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\metrics\_scorer.py", line 345, in _score
+    y_pred = method_caller(
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\metrics\_scorer.py", line 87, in _cached_call
+    result, _ = _get_response_values(
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\utils\_response.py", line 238, in _get_response_values
+    y_pred, pos_label = prediction_method(X), None
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\pipeline.py", line 330, in predict
+    y = self.steps[-1][-1].predict(X, **params)
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\neighbors\_regression.py", line 242, in predict
+    neigh_ind = self.kneighbors(X, return_distance=False)
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\neighbors\_base.py", line 850, in kneighbors
+    results = ArgKmin.compute(
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\metrics\_pairwise_distances_reduction\_dispatcher.py", line 278, in compute
+    return ArgKmin64.compute(
+  File "sklearn\\metrics\\_pairwise_distances_reduction\\_argkmin.pyx", line 90, in sklearn.metrics._pairwise_distances_reduction._argkmin.ArgKmin64.compute
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\utils\fixes.py", line 94, in threadpool_limits
+    return threadpoolctl.threadpool_limits(limits=limits, user_api=user_api)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 171, in __init__
+    self._original_info = self._set_threadpool_limits()
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 268, in _set_threadpool_limits
+    modules = _ThreadpoolInfo(prefixes=self._prefixes,
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 340, in __init__
+    self._load_modules()
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 373, in _load_modules
+    self._find_modules_with_enum_process_module_ex()
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 485, in _find_modules_with_enum_process_module_ex
+    self._make_module_from_path(filepath)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 515, in _make_module_from_path
+    module = module_class(filepath, prefix, user_api, internal_api)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 606, in __init__
+    self.version = self.get_version()
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 646, in get_version
+    config = get_config().split()
+AttributeError: 'NoneType' object has no attribute 'split'
+
+
+2024-12-10 14:13:05,415:WARNING:Scoring failed. The score on this train-test partition for these parameters will be set to 0.0. Details: 
+Traceback (most recent call last):
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\metrics\_scorer.py", line 137, in __call__
+    score = scorer._score(
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\metrics\_scorer.py", line 345, in _score
+    y_pred = method_caller(
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\metrics\_scorer.py", line 87, in _cached_call
+    result, _ = _get_response_values(
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\utils\_response.py", line 238, in _get_response_values
+    y_pred, pos_label = prediction_method(X), None
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\pipeline.py", line 330, in predict
+    y = self.steps[-1][-1].predict(X, **params)
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\neighbors\_regression.py", line 242, in predict
+    neigh_ind = self.kneighbors(X, return_distance=False)
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\neighbors\_base.py", line 850, in kneighbors
+    results = ArgKmin.compute(
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\metrics\_pairwise_distances_reduction\_dispatcher.py", line 278, in compute
+    return ArgKmin64.compute(
+  File "sklearn\\metrics\\_pairwise_distances_reduction\\_argkmin.pyx", line 90, in sklearn.metrics._pairwise_distances_reduction._argkmin.ArgKmin64.compute
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\utils\fixes.py", line 94, in threadpool_limits
+    return threadpoolctl.threadpool_limits(limits=limits, user_api=user_api)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 171, in __init__
+    self._original_info = self._set_threadpool_limits()
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 268, in _set_threadpool_limits
+    modules = _ThreadpoolInfo(prefixes=self._prefixes,
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 340, in __init__
+    self._load_modules()
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 373, in _load_modules
+    self._find_modules_with_enum_process_module_ex()
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 485, in _find_modules_with_enum_process_module_ex
+    self._make_module_from_path(filepath)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 515, in _make_module_from_path
+    module = module_class(filepath, prefix, user_api, internal_api)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 606, in __init__
+    self.version = self.get_version()
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 646, in get_version
+    config = get_config().split()
+AttributeError: 'NoneType' object has no attribute 'split'
+
+
+2024-12-10 14:13:05,515:WARNING:Metric 'make_scorer(root_mean_squared_log_error, greater_is_better=False, response_method='predict')' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\metrics.py", line 196, in _score
+    return super()._score(
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\metrics\_scorer.py", line 345, in _score
+    y_pred = method_caller(
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\metrics\_scorer.py", line 87, in _cached_call
+    result, _ = _get_response_values(
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\utils\_response.py", line 238, in _get_response_values
+    y_pred, pos_label = prediction_method(X), None
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\pipeline.py", line 330, in predict
+    y = self.steps[-1][-1].predict(X, **params)
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\neighbors\_regression.py", line 242, in predict
+    neigh_ind = self.kneighbors(X, return_distance=False)
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\neighbors\_base.py", line 850, in kneighbors
+    results = ArgKmin.compute(
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\metrics\_pairwise_distances_reduction\_dispatcher.py", line 278, in compute
+    return ArgKmin64.compute(
+  File "sklearn\\metrics\\_pairwise_distances_reduction\\_argkmin.pyx", line 90, in sklearn.metrics._pairwise_distances_reduction._argkmin.ArgKmin64.compute
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\utils\fixes.py", line 94, in threadpool_limits
+    return threadpoolctl.threadpool_limits(limits=limits, user_api=user_api)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 171, in __init__
+    self._original_info = self._set_threadpool_limits()
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 268, in _set_threadpool_limits
+    modules = _ThreadpoolInfo(prefixes=self._prefixes,
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 340, in __init__
+    self._load_modules()
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 373, in _load_modules
+    self._find_modules_with_enum_process_module_ex()
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 485, in _find_modules_with_enum_process_module_ex
+    self._make_module_from_path(filepath)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 515, in _make_module_from_path
+    module = module_class(filepath, prefix, user_api, internal_api)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 606, in __init__
+    self.version = self.get_version()
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 646, in get_version
+    config = get_config().split()
+AttributeError: 'NoneType' object has no attribute 'split'
+
+
+2024-12-10 14:13:05,518:WARNING:Metric 'make_scorer(mean_absolute_percentage_error, greater_is_better=False, response_method='predict')' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\metrics.py", line 196, in _score
+    return super()._score(
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\metrics\_scorer.py", line 345, in _score
+    y_pred = method_caller(
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\metrics\_scorer.py", line 87, in _cached_call
+    result, _ = _get_response_values(
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\utils\_response.py", line 238, in _get_response_values
+    y_pred, pos_label = prediction_method(X), None
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\pipeline.py", line 330, in predict
+    y = self.steps[-1][-1].predict(X, **params)
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\neighbors\_regression.py", line 242, in predict
+    neigh_ind = self.kneighbors(X, return_distance=False)
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\neighbors\_base.py", line 850, in kneighbors
+    results = ArgKmin.compute(
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\metrics\_pairwise_distances_reduction\_dispatcher.py", line 278, in compute
+    return ArgKmin64.compute(
+  File "sklearn\\metrics\\_pairwise_distances_reduction\\_argkmin.pyx", line 90, in sklearn.metrics._pairwise_distances_reduction._argkmin.ArgKmin64.compute
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\utils\fixes.py", line 94, in threadpool_limits
+    return threadpoolctl.threadpool_limits(limits=limits, user_api=user_api)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 171, in __init__
+    self._original_info = self._set_threadpool_limits()
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 268, in _set_threadpool_limits
+    modules = _ThreadpoolInfo(prefixes=self._prefixes,
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 340, in __init__
+    self._load_modules()
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 373, in _load_modules
+    self._find_modules_with_enum_process_module_ex()
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 485, in _find_modules_with_enum_process_module_ex
+    self._make_module_from_path(filepath)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 515, in _make_module_from_path
+    module = module_class(filepath, prefix, user_api, internal_api)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 606, in __init__
+    self.version = self.get_version()
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 646, in get_version
+    config = get_config().split()
+AttributeError: 'NoneType' object has no attribute 'split'
+
+
+2024-12-10 14:13:05,518:WARNING:Scoring failed. The score on this train-test partition for these parameters will be set to 0.0. Details: 
+Traceback (most recent call last):
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\metrics\_scorer.py", line 137, in __call__
+    score = scorer._score(
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\metrics\_scorer.py", line 345, in _score
+    y_pred = method_caller(
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\metrics\_scorer.py", line 87, in _cached_call
+    result, _ = _get_response_values(
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\utils\_response.py", line 238, in _get_response_values
+    y_pred, pos_label = prediction_method(X), None
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\pipeline.py", line 330, in predict
+    y = self.steps[-1][-1].predict(X, **params)
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\neighbors\_regression.py", line 242, in predict
+    neigh_ind = self.kneighbors(X, return_distance=False)
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\neighbors\_base.py", line 850, in kneighbors
+    results = ArgKmin.compute(
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\metrics\_pairwise_distances_reduction\_dispatcher.py", line 278, in compute
+    return ArgKmin64.compute(
+  File "sklearn\\metrics\\_pairwise_distances_reduction\\_argkmin.pyx", line 90, in sklearn.metrics._pairwise_distances_reduction._argkmin.ArgKmin64.compute
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\utils\fixes.py", line 94, in threadpool_limits
+    return threadpoolctl.threadpool_limits(limits=limits, user_api=user_api)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 171, in __init__
+    self._original_info = self._set_threadpool_limits()
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 268, in _set_threadpool_limits
+    modules = _ThreadpoolInfo(prefixes=self._prefixes,
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 340, in __init__
+    self._load_modules()
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 373, in _load_modules
+    self._find_modules_with_enum_process_module_ex()
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 485, in _find_modules_with_enum_process_module_ex
+    self._make_module_from_path(filepath)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 515, in _make_module_from_path
+    module = module_class(filepath, prefix, user_api, internal_api)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 606, in __init__
+    self.version = self.get_version()
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 646, in get_version
+    config = get_config().split()
+AttributeError: 'NoneType' object has no attribute 'split'
+
+
+2024-12-10 14:13:05,519:INFO:Calculating mean and std
+2024-12-10 14:13:05,520:INFO:Creating metrics dataframe
+2024-12-10 14:13:05,521:INFO:Uploading results into container
+2024-12-10 14:13:05,522:INFO:Uploading model into container now
+2024-12-10 14:13:05,522:INFO:_master_model_container: 11
+2024-12-10 14:13:05,522:INFO:_display_container: 2
+2024-12-10 14:13:05,522:INFO:KNeighborsRegressor(n_jobs=-1)
+2024-12-10 14:13:05,522:INFO:create_model() successfully completed......................................
+2024-12-10 14:13:05,607:WARNING:create_model() for KNeighborsRegressor(n_jobs=-1) raised an exception or returned all 0.0, trying without fit_kwargs:
+2024-12-10 14:13:05,608:WARNING:Traceback (most recent call last):
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 796, in compare_models
+    assert (
+AssertionError
+
+2024-12-10 14:13:05,608:INFO:Initializing create_model()
+2024-12-10 14:13:05,608:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016EDE722730>, estimator=knn, fold=KFold(n_splits=5, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000016EE2ED7AF0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-12-10 14:13:05,608:INFO:Checking exceptions
+2024-12-10 14:13:05,608:INFO:Importing libraries
+2024-12-10 14:13:05,608:INFO:Copying training dataset
+2024-12-10 14:13:05,629:INFO:Defining folds
+2024-12-10 14:13:05,629:INFO:Declaring metric variables
+2024-12-10 14:13:05,631:INFO:Importing untrained model
+2024-12-10 14:13:05,634:INFO:K Neighbors Regressor Imported successfully
+2024-12-10 14:13:05,639:INFO:Starting cross validation
+2024-12-10 14:13:05,640:INFO:Cross validating with KFold(n_splits=5, random_state=None, shuffle=False), n_jobs=1
+2024-12-10 14:13:05,739:WARNING:Metric 'make_scorer(root_mean_squared_log_error, greater_is_better=False, response_method='predict')' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 796, in compare_models
+    assert (
+AssertionError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\metrics.py", line 196, in _score
+    return super()._score(
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\metrics\_scorer.py", line 345, in _score
+    y_pred = method_caller(
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\metrics\_scorer.py", line 87, in _cached_call
+    result, _ = _get_response_values(
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\utils\_response.py", line 238, in _get_response_values
+    y_pred, pos_label = prediction_method(X), None
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\pipeline.py", line 330, in predict
+    y = self.steps[-1][-1].predict(X, **params)
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\neighbors\_regression.py", line 242, in predict
+    neigh_ind = self.kneighbors(X, return_distance=False)
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\neighbors\_base.py", line 850, in kneighbors
+    results = ArgKmin.compute(
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\metrics\_pairwise_distances_reduction\_dispatcher.py", line 278, in compute
+    return ArgKmin64.compute(
+  File "sklearn\\metrics\\_pairwise_distances_reduction\\_argkmin.pyx", line 90, in sklearn.metrics._pairwise_distances_reduction._argkmin.ArgKmin64.compute
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\utils\fixes.py", line 94, in threadpool_limits
+    return threadpoolctl.threadpool_limits(limits=limits, user_api=user_api)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 171, in __init__
+    self._original_info = self._set_threadpool_limits()
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 268, in _set_threadpool_limits
+    modules = _ThreadpoolInfo(prefixes=self._prefixes,
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 340, in __init__
+    self._load_modules()
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 373, in _load_modules
+    self._find_modules_with_enum_process_module_ex()
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 485, in _find_modules_with_enum_process_module_ex
+    self._make_module_from_path(filepath)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 515, in _make_module_from_path
+    module = module_class(filepath, prefix, user_api, internal_api)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 606, in __init__
+    self.version = self.get_version()
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 646, in get_version
+    config = get_config().split()
+AttributeError: 'NoneType' object has no attribute 'split'
+
+
+2024-12-10 14:13:05,743:WARNING:Metric 'make_scorer(mean_absolute_percentage_error, greater_is_better=False, response_method='predict')' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 796, in compare_models
+    assert (
+AssertionError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\metrics.py", line 196, in _score
+    return super()._score(
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\metrics\_scorer.py", line 345, in _score
+    y_pred = method_caller(
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\metrics\_scorer.py", line 87, in _cached_call
+    result, _ = _get_response_values(
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\utils\_response.py", line 238, in _get_response_values
+    y_pred, pos_label = prediction_method(X), None
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\pipeline.py", line 330, in predict
+    y = self.steps[-1][-1].predict(X, **params)
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\neighbors\_regression.py", line 242, in predict
+    neigh_ind = self.kneighbors(X, return_distance=False)
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\neighbors\_base.py", line 850, in kneighbors
+    results = ArgKmin.compute(
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\metrics\_pairwise_distances_reduction\_dispatcher.py", line 278, in compute
+    return ArgKmin64.compute(
+  File "sklearn\\metrics\\_pairwise_distances_reduction\\_argkmin.pyx", line 90, in sklearn.metrics._pairwise_distances_reduction._argkmin.ArgKmin64.compute
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\utils\fixes.py", line 94, in threadpool_limits
+    return threadpoolctl.threadpool_limits(limits=limits, user_api=user_api)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 171, in __init__
+    self._original_info = self._set_threadpool_limits()
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 268, in _set_threadpool_limits
+    modules = _ThreadpoolInfo(prefixes=self._prefixes,
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 340, in __init__
+    self._load_modules()
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 373, in _load_modules
+    self._find_modules_with_enum_process_module_ex()
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 485, in _find_modules_with_enum_process_module_ex
+    self._make_module_from_path(filepath)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 515, in _make_module_from_path
+    module = module_class(filepath, prefix, user_api, internal_api)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 606, in __init__
+    self.version = self.get_version()
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 646, in get_version
+    config = get_config().split()
+AttributeError: 'NoneType' object has no attribute 'split'
+
+
+2024-12-10 14:13:05,743:WARNING:Scoring failed. The score on this train-test partition for these parameters will be set to 0.0. Details: 
+Traceback (most recent call last):
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 796, in compare_models
+    assert (
+AssertionError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\metrics\_scorer.py", line 137, in __call__
+    score = scorer._score(
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\metrics\_scorer.py", line 345, in _score
+    y_pred = method_caller(
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\metrics\_scorer.py", line 87, in _cached_call
+    result, _ = _get_response_values(
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\utils\_response.py", line 238, in _get_response_values
+    y_pred, pos_label = prediction_method(X), None
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\pipeline.py", line 330, in predict
+    y = self.steps[-1][-1].predict(X, **params)
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\neighbors\_regression.py", line 242, in predict
+    neigh_ind = self.kneighbors(X, return_distance=False)
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\neighbors\_base.py", line 850, in kneighbors
+    results = ArgKmin.compute(
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\metrics\_pairwise_distances_reduction\_dispatcher.py", line 278, in compute
+    return ArgKmin64.compute(
+  File "sklearn\\metrics\\_pairwise_distances_reduction\\_argkmin.pyx", line 90, in sklearn.metrics._pairwise_distances_reduction._argkmin.ArgKmin64.compute
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\utils\fixes.py", line 94, in threadpool_limits
+    return threadpoolctl.threadpool_limits(limits=limits, user_api=user_api)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 171, in __init__
+    self._original_info = self._set_threadpool_limits()
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 268, in _set_threadpool_limits
+    modules = _ThreadpoolInfo(prefixes=self._prefixes,
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 340, in __init__
+    self._load_modules()
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 373, in _load_modules
+    self._find_modules_with_enum_process_module_ex()
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 485, in _find_modules_with_enum_process_module_ex
+    self._make_module_from_path(filepath)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 515, in _make_module_from_path
+    module = module_class(filepath, prefix, user_api, internal_api)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 606, in __init__
+    self.version = self.get_version()
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 646, in get_version
+    config = get_config().split()
+AttributeError: 'NoneType' object has no attribute 'split'
+
+
+2024-12-10 14:13:05,839:WARNING:Metric 'make_scorer(root_mean_squared_log_error, greater_is_better=False, response_method='predict')' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 796, in compare_models
+    assert (
+AssertionError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\metrics.py", line 196, in _score
+    return super()._score(
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\metrics\_scorer.py", line 345, in _score
+    y_pred = method_caller(
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\metrics\_scorer.py", line 87, in _cached_call
+    result, _ = _get_response_values(
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\utils\_response.py", line 238, in _get_response_values
+    y_pred, pos_label = prediction_method(X), None
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\pipeline.py", line 330, in predict
+    y = self.steps[-1][-1].predict(X, **params)
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\neighbors\_regression.py", line 242, in predict
+    neigh_ind = self.kneighbors(X, return_distance=False)
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\neighbors\_base.py", line 850, in kneighbors
+    results = ArgKmin.compute(
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\metrics\_pairwise_distances_reduction\_dispatcher.py", line 278, in compute
+    return ArgKmin64.compute(
+  File "sklearn\\metrics\\_pairwise_distances_reduction\\_argkmin.pyx", line 90, in sklearn.metrics._pairwise_distances_reduction._argkmin.ArgKmin64.compute
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\utils\fixes.py", line 94, in threadpool_limits
+    return threadpoolctl.threadpool_limits(limits=limits, user_api=user_api)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 171, in __init__
+    self._original_info = self._set_threadpool_limits()
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 268, in _set_threadpool_limits
+    modules = _ThreadpoolInfo(prefixes=self._prefixes,
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 340, in __init__
+    self._load_modules()
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 373, in _load_modules
+    self._find_modules_with_enum_process_module_ex()
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 485, in _find_modules_with_enum_process_module_ex
+    self._make_module_from_path(filepath)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 515, in _make_module_from_path
+    module = module_class(filepath, prefix, user_api, internal_api)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 606, in __init__
+    self.version = self.get_version()
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 646, in get_version
+    config = get_config().split()
+AttributeError: 'NoneType' object has no attribute 'split'
+
+
+2024-12-10 14:13:05,842:WARNING:Metric 'make_scorer(mean_absolute_percentage_error, greater_is_better=False, response_method='predict')' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 796, in compare_models
+    assert (
+AssertionError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\metrics.py", line 196, in _score
+    return super()._score(
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\metrics\_scorer.py", line 345, in _score
+    y_pred = method_caller(
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\metrics\_scorer.py", line 87, in _cached_call
+    result, _ = _get_response_values(
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\utils\_response.py", line 238, in _get_response_values
+    y_pred, pos_label = prediction_method(X), None
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\pipeline.py", line 330, in predict
+    y = self.steps[-1][-1].predict(X, **params)
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\neighbors\_regression.py", line 242, in predict
+    neigh_ind = self.kneighbors(X, return_distance=False)
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\neighbors\_base.py", line 850, in kneighbors
+    results = ArgKmin.compute(
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\metrics\_pairwise_distances_reduction\_dispatcher.py", line 278, in compute
+    return ArgKmin64.compute(
+  File "sklearn\\metrics\\_pairwise_distances_reduction\\_argkmin.pyx", line 90, in sklearn.metrics._pairwise_distances_reduction._argkmin.ArgKmin64.compute
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\utils\fixes.py", line 94, in threadpool_limits
+    return threadpoolctl.threadpool_limits(limits=limits, user_api=user_api)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 171, in __init__
+    self._original_info = self._set_threadpool_limits()
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 268, in _set_threadpool_limits
+    modules = _ThreadpoolInfo(prefixes=self._prefixes,
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 340, in __init__
+    self._load_modules()
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 373, in _load_modules
+    self._find_modules_with_enum_process_module_ex()
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 485, in _find_modules_with_enum_process_module_ex
+    self._make_module_from_path(filepath)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 515, in _make_module_from_path
+    module = module_class(filepath, prefix, user_api, internal_api)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 606, in __init__
+    self.version = self.get_version()
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 646, in get_version
+    config = get_config().split()
+AttributeError: 'NoneType' object has no attribute 'split'
+
+
+2024-12-10 14:13:05,842:WARNING:Scoring failed. The score on this train-test partition for these parameters will be set to 0.0. Details: 
+Traceback (most recent call last):
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 796, in compare_models
+    assert (
+AssertionError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\metrics\_scorer.py", line 137, in __call__
+    score = scorer._score(
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\metrics\_scorer.py", line 345, in _score
+    y_pred = method_caller(
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\metrics\_scorer.py", line 87, in _cached_call
+    result, _ = _get_response_values(
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\utils\_response.py", line 238, in _get_response_values
+    y_pred, pos_label = prediction_method(X), None
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\pipeline.py", line 330, in predict
+    y = self.steps[-1][-1].predict(X, **params)
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\neighbors\_regression.py", line 242, in predict
+    neigh_ind = self.kneighbors(X, return_distance=False)
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\neighbors\_base.py", line 850, in kneighbors
+    results = ArgKmin.compute(
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\metrics\_pairwise_distances_reduction\_dispatcher.py", line 278, in compute
+    return ArgKmin64.compute(
+  File "sklearn\\metrics\\_pairwise_distances_reduction\\_argkmin.pyx", line 90, in sklearn.metrics._pairwise_distances_reduction._argkmin.ArgKmin64.compute
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\utils\fixes.py", line 94, in threadpool_limits
+    return threadpoolctl.threadpool_limits(limits=limits, user_api=user_api)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 171, in __init__
+    self._original_info = self._set_threadpool_limits()
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 268, in _set_threadpool_limits
+    modules = _ThreadpoolInfo(prefixes=self._prefixes,
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 340, in __init__
+    self._load_modules()
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 373, in _load_modules
+    self._find_modules_with_enum_process_module_ex()
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 485, in _find_modules_with_enum_process_module_ex
+    self._make_module_from_path(filepath)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 515, in _make_module_from_path
+    module = module_class(filepath, prefix, user_api, internal_api)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 606, in __init__
+    self.version = self.get_version()
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 646, in get_version
+    config = get_config().split()
+AttributeError: 'NoneType' object has no attribute 'split'
+
+
+2024-12-10 14:13:05,940:WARNING:Metric 'make_scorer(root_mean_squared_log_error, greater_is_better=False, response_method='predict')' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 796, in compare_models
+    assert (
+AssertionError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\metrics.py", line 196, in _score
+    return super()._score(
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\metrics\_scorer.py", line 345, in _score
+    y_pred = method_caller(
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\metrics\_scorer.py", line 87, in _cached_call
+    result, _ = _get_response_values(
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\utils\_response.py", line 238, in _get_response_values
+    y_pred, pos_label = prediction_method(X), None
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\pipeline.py", line 330, in predict
+    y = self.steps[-1][-1].predict(X, **params)
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\neighbors\_regression.py", line 242, in predict
+    neigh_ind = self.kneighbors(X, return_distance=False)
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\neighbors\_base.py", line 850, in kneighbors
+    results = ArgKmin.compute(
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\metrics\_pairwise_distances_reduction\_dispatcher.py", line 278, in compute
+    return ArgKmin64.compute(
+  File "sklearn\\metrics\\_pairwise_distances_reduction\\_argkmin.pyx", line 90, in sklearn.metrics._pairwise_distances_reduction._argkmin.ArgKmin64.compute
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\utils\fixes.py", line 94, in threadpool_limits
+    return threadpoolctl.threadpool_limits(limits=limits, user_api=user_api)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 171, in __init__
+    self._original_info = self._set_threadpool_limits()
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 268, in _set_threadpool_limits
+    modules = _ThreadpoolInfo(prefixes=self._prefixes,
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 340, in __init__
+    self._load_modules()
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 373, in _load_modules
+    self._find_modules_with_enum_process_module_ex()
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 485, in _find_modules_with_enum_process_module_ex
+    self._make_module_from_path(filepath)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 515, in _make_module_from_path
+    module = module_class(filepath, prefix, user_api, internal_api)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 606, in __init__
+    self.version = self.get_version()
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 646, in get_version
+    config = get_config().split()
+AttributeError: 'NoneType' object has no attribute 'split'
+
+
+2024-12-10 14:13:05,943:WARNING:Metric 'make_scorer(mean_absolute_percentage_error, greater_is_better=False, response_method='predict')' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 796, in compare_models
+    assert (
+AssertionError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\metrics.py", line 196, in _score
+    return super()._score(
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\metrics\_scorer.py", line 345, in _score
+    y_pred = method_caller(
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\metrics\_scorer.py", line 87, in _cached_call
+    result, _ = _get_response_values(
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\utils\_response.py", line 238, in _get_response_values
+    y_pred, pos_label = prediction_method(X), None
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\pipeline.py", line 330, in predict
+    y = self.steps[-1][-1].predict(X, **params)
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\neighbors\_regression.py", line 242, in predict
+    neigh_ind = self.kneighbors(X, return_distance=False)
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\neighbors\_base.py", line 850, in kneighbors
+    results = ArgKmin.compute(
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\metrics\_pairwise_distances_reduction\_dispatcher.py", line 278, in compute
+    return ArgKmin64.compute(
+  File "sklearn\\metrics\\_pairwise_distances_reduction\\_argkmin.pyx", line 90, in sklearn.metrics._pairwise_distances_reduction._argkmin.ArgKmin64.compute
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\utils\fixes.py", line 94, in threadpool_limits
+    return threadpoolctl.threadpool_limits(limits=limits, user_api=user_api)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 171, in __init__
+    self._original_info = self._set_threadpool_limits()
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 268, in _set_threadpool_limits
+    modules = _ThreadpoolInfo(prefixes=self._prefixes,
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 340, in __init__
+    self._load_modules()
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 373, in _load_modules
+    self._find_modules_with_enum_process_module_ex()
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 485, in _find_modules_with_enum_process_module_ex
+    self._make_module_from_path(filepath)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 515, in _make_module_from_path
+    module = module_class(filepath, prefix, user_api, internal_api)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 606, in __init__
+    self.version = self.get_version()
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 646, in get_version
+    config = get_config().split()
+AttributeError: 'NoneType' object has no attribute 'split'
+
+
+2024-12-10 14:13:05,943:WARNING:Scoring failed. The score on this train-test partition for these parameters will be set to 0.0. Details: 
+Traceback (most recent call last):
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 796, in compare_models
+    assert (
+AssertionError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\metrics\_scorer.py", line 137, in __call__
+    score = scorer._score(
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\metrics\_scorer.py", line 345, in _score
+    y_pred = method_caller(
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\metrics\_scorer.py", line 87, in _cached_call
+    result, _ = _get_response_values(
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\utils\_response.py", line 238, in _get_response_values
+    y_pred, pos_label = prediction_method(X), None
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\pipeline.py", line 330, in predict
+    y = self.steps[-1][-1].predict(X, **params)
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\neighbors\_regression.py", line 242, in predict
+    neigh_ind = self.kneighbors(X, return_distance=False)
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\neighbors\_base.py", line 850, in kneighbors
+    results = ArgKmin.compute(
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\metrics\_pairwise_distances_reduction\_dispatcher.py", line 278, in compute
+    return ArgKmin64.compute(
+  File "sklearn\\metrics\\_pairwise_distances_reduction\\_argkmin.pyx", line 90, in sklearn.metrics._pairwise_distances_reduction._argkmin.ArgKmin64.compute
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\utils\fixes.py", line 94, in threadpool_limits
+    return threadpoolctl.threadpool_limits(limits=limits, user_api=user_api)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 171, in __init__
+    self._original_info = self._set_threadpool_limits()
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 268, in _set_threadpool_limits
+    modules = _ThreadpoolInfo(prefixes=self._prefixes,
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 340, in __init__
+    self._load_modules()
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 373, in _load_modules
+    self._find_modules_with_enum_process_module_ex()
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 485, in _find_modules_with_enum_process_module_ex
+    self._make_module_from_path(filepath)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 515, in _make_module_from_path
+    module = module_class(filepath, prefix, user_api, internal_api)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 606, in __init__
+    self.version = self.get_version()
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 646, in get_version
+    config = get_config().split()
+AttributeError: 'NoneType' object has no attribute 'split'
+
+
+2024-12-10 14:13:06,039:WARNING:Metric 'make_scorer(root_mean_squared_log_error, greater_is_better=False, response_method='predict')' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 796, in compare_models
+    assert (
+AssertionError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\metrics.py", line 196, in _score
+    return super()._score(
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\metrics\_scorer.py", line 345, in _score
+    y_pred = method_caller(
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\metrics\_scorer.py", line 87, in _cached_call
+    result, _ = _get_response_values(
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\utils\_response.py", line 238, in _get_response_values
+    y_pred, pos_label = prediction_method(X), None
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\pipeline.py", line 330, in predict
+    y = self.steps[-1][-1].predict(X, **params)
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\neighbors\_regression.py", line 242, in predict
+    neigh_ind = self.kneighbors(X, return_distance=False)
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\neighbors\_base.py", line 850, in kneighbors
+    results = ArgKmin.compute(
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\metrics\_pairwise_distances_reduction\_dispatcher.py", line 278, in compute
+    return ArgKmin64.compute(
+  File "sklearn\\metrics\\_pairwise_distances_reduction\\_argkmin.pyx", line 90, in sklearn.metrics._pairwise_distances_reduction._argkmin.ArgKmin64.compute
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\utils\fixes.py", line 94, in threadpool_limits
+    return threadpoolctl.threadpool_limits(limits=limits, user_api=user_api)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 171, in __init__
+    self._original_info = self._set_threadpool_limits()
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 268, in _set_threadpool_limits
+    modules = _ThreadpoolInfo(prefixes=self._prefixes,
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 340, in __init__
+    self._load_modules()
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 373, in _load_modules
+    self._find_modules_with_enum_process_module_ex()
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 485, in _find_modules_with_enum_process_module_ex
+    self._make_module_from_path(filepath)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 515, in _make_module_from_path
+    module = module_class(filepath, prefix, user_api, internal_api)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 606, in __init__
+    self.version = self.get_version()
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 646, in get_version
+    config = get_config().split()
+AttributeError: 'NoneType' object has no attribute 'split'
+
+
+2024-12-10 14:13:06,043:WARNING:Metric 'make_scorer(mean_absolute_percentage_error, greater_is_better=False, response_method='predict')' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 796, in compare_models
+    assert (
+AssertionError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\metrics.py", line 196, in _score
+    return super()._score(
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\metrics\_scorer.py", line 345, in _score
+    y_pred = method_caller(
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\metrics\_scorer.py", line 87, in _cached_call
+    result, _ = _get_response_values(
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\utils\_response.py", line 238, in _get_response_values
+    y_pred, pos_label = prediction_method(X), None
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\pipeline.py", line 330, in predict
+    y = self.steps[-1][-1].predict(X, **params)
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\neighbors\_regression.py", line 242, in predict
+    neigh_ind = self.kneighbors(X, return_distance=False)
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\neighbors\_base.py", line 850, in kneighbors
+    results = ArgKmin.compute(
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\metrics\_pairwise_distances_reduction\_dispatcher.py", line 278, in compute
+    return ArgKmin64.compute(
+  File "sklearn\\metrics\\_pairwise_distances_reduction\\_argkmin.pyx", line 90, in sklearn.metrics._pairwise_distances_reduction._argkmin.ArgKmin64.compute
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\utils\fixes.py", line 94, in threadpool_limits
+    return threadpoolctl.threadpool_limits(limits=limits, user_api=user_api)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 171, in __init__
+    self._original_info = self._set_threadpool_limits()
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 268, in _set_threadpool_limits
+    modules = _ThreadpoolInfo(prefixes=self._prefixes,
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 340, in __init__
+    self._load_modules()
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 373, in _load_modules
+    self._find_modules_with_enum_process_module_ex()
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 485, in _find_modules_with_enum_process_module_ex
+    self._make_module_from_path(filepath)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 515, in _make_module_from_path
+    module = module_class(filepath, prefix, user_api, internal_api)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 606, in __init__
+    self.version = self.get_version()
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 646, in get_version
+    config = get_config().split()
+AttributeError: 'NoneType' object has no attribute 'split'
+
+
+2024-12-10 14:13:06,043:WARNING:Scoring failed. The score on this train-test partition for these parameters will be set to 0.0. Details: 
+Traceback (most recent call last):
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 796, in compare_models
+    assert (
+AssertionError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\metrics\_scorer.py", line 137, in __call__
+    score = scorer._score(
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\metrics\_scorer.py", line 345, in _score
+    y_pred = method_caller(
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\metrics\_scorer.py", line 87, in _cached_call
+    result, _ = _get_response_values(
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\utils\_response.py", line 238, in _get_response_values
+    y_pred, pos_label = prediction_method(X), None
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\pipeline.py", line 330, in predict
+    y = self.steps[-1][-1].predict(X, **params)
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\neighbors\_regression.py", line 242, in predict
+    neigh_ind = self.kneighbors(X, return_distance=False)
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\neighbors\_base.py", line 850, in kneighbors
+    results = ArgKmin.compute(
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\metrics\_pairwise_distances_reduction\_dispatcher.py", line 278, in compute
+    return ArgKmin64.compute(
+  File "sklearn\\metrics\\_pairwise_distances_reduction\\_argkmin.pyx", line 90, in sklearn.metrics._pairwise_distances_reduction._argkmin.ArgKmin64.compute
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\utils\fixes.py", line 94, in threadpool_limits
+    return threadpoolctl.threadpool_limits(limits=limits, user_api=user_api)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 171, in __init__
+    self._original_info = self._set_threadpool_limits()
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 268, in _set_threadpool_limits
+    modules = _ThreadpoolInfo(prefixes=self._prefixes,
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 340, in __init__
+    self._load_modules()
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 373, in _load_modules
+    self._find_modules_with_enum_process_module_ex()
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 485, in _find_modules_with_enum_process_module_ex
+    self._make_module_from_path(filepath)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 515, in _make_module_from_path
+    module = module_class(filepath, prefix, user_api, internal_api)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 606, in __init__
+    self.version = self.get_version()
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 646, in get_version
+    config = get_config().split()
+AttributeError: 'NoneType' object has no attribute 'split'
+
+
+2024-12-10 14:13:06,140:WARNING:Metric 'make_scorer(root_mean_squared_log_error, greater_is_better=False, response_method='predict')' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 796, in compare_models
+    assert (
+AssertionError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\metrics.py", line 196, in _score
+    return super()._score(
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\metrics\_scorer.py", line 345, in _score
+    y_pred = method_caller(
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\metrics\_scorer.py", line 87, in _cached_call
+    result, _ = _get_response_values(
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\utils\_response.py", line 238, in _get_response_values
+    y_pred, pos_label = prediction_method(X), None
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\pipeline.py", line 330, in predict
+    y = self.steps[-1][-1].predict(X, **params)
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\neighbors\_regression.py", line 242, in predict
+    neigh_ind = self.kneighbors(X, return_distance=False)
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\neighbors\_base.py", line 850, in kneighbors
+    results = ArgKmin.compute(
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\metrics\_pairwise_distances_reduction\_dispatcher.py", line 278, in compute
+    return ArgKmin64.compute(
+  File "sklearn\\metrics\\_pairwise_distances_reduction\\_argkmin.pyx", line 90, in sklearn.metrics._pairwise_distances_reduction._argkmin.ArgKmin64.compute
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\utils\fixes.py", line 94, in threadpool_limits
+    return threadpoolctl.threadpool_limits(limits=limits, user_api=user_api)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 171, in __init__
+    self._original_info = self._set_threadpool_limits()
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 268, in _set_threadpool_limits
+    modules = _ThreadpoolInfo(prefixes=self._prefixes,
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 340, in __init__
+    self._load_modules()
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 373, in _load_modules
+    self._find_modules_with_enum_process_module_ex()
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 485, in _find_modules_with_enum_process_module_ex
+    self._make_module_from_path(filepath)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 515, in _make_module_from_path
+    module = module_class(filepath, prefix, user_api, internal_api)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 606, in __init__
+    self.version = self.get_version()
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 646, in get_version
+    config = get_config().split()
+AttributeError: 'NoneType' object has no attribute 'split'
+
+
+2024-12-10 14:13:06,143:WARNING:Metric 'make_scorer(mean_absolute_percentage_error, greater_is_better=False, response_method='predict')' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 796, in compare_models
+    assert (
+AssertionError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\metrics.py", line 196, in _score
+    return super()._score(
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\metrics\_scorer.py", line 345, in _score
+    y_pred = method_caller(
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\metrics\_scorer.py", line 87, in _cached_call
+    result, _ = _get_response_values(
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\utils\_response.py", line 238, in _get_response_values
+    y_pred, pos_label = prediction_method(X), None
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\pipeline.py", line 330, in predict
+    y = self.steps[-1][-1].predict(X, **params)
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\neighbors\_regression.py", line 242, in predict
+    neigh_ind = self.kneighbors(X, return_distance=False)
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\neighbors\_base.py", line 850, in kneighbors
+    results = ArgKmin.compute(
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\metrics\_pairwise_distances_reduction\_dispatcher.py", line 278, in compute
+    return ArgKmin64.compute(
+  File "sklearn\\metrics\\_pairwise_distances_reduction\\_argkmin.pyx", line 90, in sklearn.metrics._pairwise_distances_reduction._argkmin.ArgKmin64.compute
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\utils\fixes.py", line 94, in threadpool_limits
+    return threadpoolctl.threadpool_limits(limits=limits, user_api=user_api)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 171, in __init__
+    self._original_info = self._set_threadpool_limits()
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 268, in _set_threadpool_limits
+    modules = _ThreadpoolInfo(prefixes=self._prefixes,
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 340, in __init__
+    self._load_modules()
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 373, in _load_modules
+    self._find_modules_with_enum_process_module_ex()
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 485, in _find_modules_with_enum_process_module_ex
+    self._make_module_from_path(filepath)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 515, in _make_module_from_path
+    module = module_class(filepath, prefix, user_api, internal_api)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 606, in __init__
+    self.version = self.get_version()
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 646, in get_version
+    config = get_config().split()
+AttributeError: 'NoneType' object has no attribute 'split'
+
+
+2024-12-10 14:13:06,143:WARNING:Scoring failed. The score on this train-test partition for these parameters will be set to 0.0. Details: 
+Traceback (most recent call last):
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 796, in compare_models
+    assert (
+AssertionError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\metrics\_scorer.py", line 137, in __call__
+    score = scorer._score(
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\metrics\_scorer.py", line 345, in _score
+    y_pred = method_caller(
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\metrics\_scorer.py", line 87, in _cached_call
+    result, _ = _get_response_values(
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\utils\_response.py", line 238, in _get_response_values
+    y_pred, pos_label = prediction_method(X), None
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\pipeline.py", line 330, in predict
+    y = self.steps[-1][-1].predict(X, **params)
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\neighbors\_regression.py", line 242, in predict
+    neigh_ind = self.kneighbors(X, return_distance=False)
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\neighbors\_base.py", line 850, in kneighbors
+    results = ArgKmin.compute(
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\metrics\_pairwise_distances_reduction\_dispatcher.py", line 278, in compute
+    return ArgKmin64.compute(
+  File "sklearn\\metrics\\_pairwise_distances_reduction\\_argkmin.pyx", line 90, in sklearn.metrics._pairwise_distances_reduction._argkmin.ArgKmin64.compute
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\sklearn\utils\fixes.py", line 94, in threadpool_limits
+    return threadpoolctl.threadpool_limits(limits=limits, user_api=user_api)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 171, in __init__
+    self._original_info = self._set_threadpool_limits()
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 268, in _set_threadpool_limits
+    modules = _ThreadpoolInfo(prefixes=self._prefixes,
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 340, in __init__
+    self._load_modules()
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 373, in _load_modules
+    self._find_modules_with_enum_process_module_ex()
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 485, in _find_modules_with_enum_process_module_ex
+    self._make_module_from_path(filepath)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 515, in _make_module_from_path
+    module = module_class(filepath, prefix, user_api, internal_api)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 606, in __init__
+    self.version = self.get_version()
+  File "C:\ProgramData\Anaconda3\lib\site-packages\threadpoolctl.py", line 646, in get_version
+    config = get_config().split()
+AttributeError: 'NoneType' object has no attribute 'split'
+
+
+2024-12-10 14:13:06,144:INFO:Calculating mean and std
+2024-12-10 14:13:06,145:INFO:Creating metrics dataframe
+2024-12-10 14:13:06,146:INFO:Uploading results into container
+2024-12-10 14:13:06,147:INFO:Uploading model into container now
+2024-12-10 14:13:06,147:INFO:_master_model_container: 12
+2024-12-10 14:13:06,147:INFO:_display_container: 2
+2024-12-10 14:13:06,147:INFO:KNeighborsRegressor(n_jobs=-1)
+2024-12-10 14:13:06,147:INFO:create_model() successfully completed......................................
+2024-12-10 14:13:06,226:ERROR:create_model() for KNeighborsRegressor(n_jobs=-1) raised an exception or returned all 0.0:
+2024-12-10 14:13:06,226:ERROR:Traceback (most recent call last):
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 796, in compare_models
+    assert (
+AssertionError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\user\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 817, in compare_models
+    assert (
+AssertionError
+
+2024-12-10 14:13:06,226:INFO:Initializing Decision Tree Regressor
+2024-12-10 14:13:06,227:INFO:Total runtime is 0.14136978785196938 minutes
+2024-12-10 14:13:06,229:INFO:SubProcess create_model() called ==================================
+2024-12-10 14:13:06,229:INFO:Initializing create_model()
+2024-12-10 14:13:06,229:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016EDE722730>, estimator=dt, fold=KFold(n_splits=5, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000016EE2ED7AF0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-12-10 14:13:06,229:INFO:Checking exceptions
+2024-12-10 14:13:06,229:INFO:Importing libraries
+2024-12-10 14:13:06,229:INFO:Copying training dataset
+2024-12-10 14:13:06,250:INFO:Defining folds
+2024-12-10 14:13:06,250:INFO:Declaring metric variables
+2024-12-10 14:13:06,253:INFO:Importing untrained model
+2024-12-10 14:13:06,255:INFO:Decision Tree Regressor Imported successfully
+2024-12-10 14:13:06,260:INFO:Starting cross validation
+2024-12-10 14:13:06,261:INFO:Cross validating with KFold(n_splits=5, random_state=None, shuffle=False), n_jobs=1
+2024-12-10 14:13:06,832:INFO:Calculating mean and std
+2024-12-10 14:13:06,833:INFO:Creating metrics dataframe
+2024-12-10 14:13:06,834:INFO:Uploading results into container
+2024-12-10 14:13:06,834:INFO:Uploading model into container now
+2024-12-10 14:13:06,835:INFO:_master_model_container: 13
+2024-12-10 14:13:06,835:INFO:_display_container: 2
+2024-12-10 14:13:06,835:INFO:DecisionTreeRegressor(random_state=123)
+2024-12-10 14:13:06,835:INFO:create_model() successfully completed......................................
+2024-12-10 14:13:06,916:INFO:SubProcess create_model() end ==================================
+2024-12-10 14:13:06,916:INFO:Creating metrics dataframe
+2024-12-10 14:13:06,923:INFO:Initializing Random Forest Regressor
+2024-12-10 14:13:06,923:INFO:Total runtime is 0.15297262668609618 minutes
+2024-12-10 14:13:06,925:INFO:SubProcess create_model() called ==================================
+2024-12-10 14:13:06,925:INFO:Initializing create_model()
+2024-12-10 14:13:06,925:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016EDE722730>, estimator=rf, fold=KFold(n_splits=5, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000016EE2ED7AF0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-12-10 14:13:06,925:INFO:Checking exceptions
+2024-12-10 14:13:06,925:INFO:Importing libraries
+2024-12-10 14:13:06,925:INFO:Copying training dataset
+2024-12-10 14:13:06,947:INFO:Defining folds
+2024-12-10 14:13:06,948:INFO:Declaring metric variables
+2024-12-10 14:13:06,950:INFO:Importing untrained model
+2024-12-10 14:13:06,953:INFO:Random Forest Regressor Imported successfully
+2024-12-10 14:13:06,957:INFO:Starting cross validation
+2024-12-10 14:13:06,959:INFO:Cross validating with KFold(n_splits=5, random_state=None, shuffle=False), n_jobs=1
+2024-12-10 14:13:08,986:INFO:Calculating mean and std
+2024-12-10 14:13:08,987:INFO:Creating metrics dataframe
+2024-12-10 14:13:08,989:INFO:Uploading results into container
+2024-12-10 14:13:08,989:INFO:Uploading model into container now
+2024-12-10 14:13:08,989:INFO:_master_model_container: 14
+2024-12-10 14:13:08,990:INFO:_display_container: 2
+2024-12-10 14:13:08,990:INFO:RandomForestRegressor(n_jobs=-1, random_state=123)
+2024-12-10 14:13:08,990:INFO:create_model() successfully completed......................................
+2024-12-10 14:13:09,070:INFO:SubProcess create_model() end ==================================
+2024-12-10 14:13:09,070:INFO:Creating metrics dataframe
+2024-12-10 14:13:09,079:INFO:Initializing Extra Trees Regressor
+2024-12-10 14:13:09,079:INFO:Total runtime is 0.1889124790827433 minutes
+2024-12-10 14:13:09,082:INFO:SubProcess create_model() called ==================================
+2024-12-10 14:13:09,082:INFO:Initializing create_model()
+2024-12-10 14:13:09,082:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016EDE722730>, estimator=et, fold=KFold(n_splits=5, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000016EE2ED7AF0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-12-10 14:13:09,082:INFO:Checking exceptions
+2024-12-10 14:13:09,082:INFO:Importing libraries
+2024-12-10 14:13:09,083:INFO:Copying training dataset
+2024-12-10 14:13:09,104:INFO:Defining folds
+2024-12-10 14:13:09,104:INFO:Declaring metric variables
+2024-12-10 14:13:09,107:INFO:Importing untrained model
+2024-12-10 14:13:09,109:INFO:Extra Trees Regressor Imported successfully
+2024-12-10 14:13:09,114:INFO:Starting cross validation
+2024-12-10 14:13:09,115:INFO:Cross validating with KFold(n_splits=5, random_state=None, shuffle=False), n_jobs=1
+2024-12-10 14:13:10,593:INFO:Calculating mean and std
+2024-12-10 14:13:10,594:INFO:Creating metrics dataframe
+2024-12-10 14:13:10,596:INFO:Uploading results into container
+2024-12-10 14:13:10,596:INFO:Uploading model into container now
+2024-12-10 14:13:10,596:INFO:_master_model_container: 15
+2024-12-10 14:13:10,596:INFO:_display_container: 2
+2024-12-10 14:13:10,597:INFO:ExtraTreesRegressor(n_jobs=-1, random_state=123)
+2024-12-10 14:13:10,597:INFO:create_model() successfully completed......................................
+2024-12-10 14:13:10,678:INFO:SubProcess create_model() end ==================================
+2024-12-10 14:13:10,678:INFO:Creating metrics dataframe
+2024-12-10 14:13:10,685:INFO:Initializing AdaBoost Regressor
+2024-12-10 14:13:10,685:INFO:Total runtime is 0.21567357381184893 minutes
+2024-12-10 14:13:10,688:INFO:SubProcess create_model() called ==================================
+2024-12-10 14:13:10,688:INFO:Initializing create_model()
+2024-12-10 14:13:10,688:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016EDE722730>, estimator=ada, fold=KFold(n_splits=5, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000016EE2ED7AF0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-12-10 14:13:10,688:INFO:Checking exceptions
+2024-12-10 14:13:10,688:INFO:Importing libraries
+2024-12-10 14:13:10,688:INFO:Copying training dataset
+2024-12-10 14:13:10,709:INFO:Defining folds
+2024-12-10 14:13:10,709:INFO:Declaring metric variables
+2024-12-10 14:13:10,712:INFO:Importing untrained model
+2024-12-10 14:13:10,714:INFO:AdaBoost Regressor Imported successfully
+2024-12-10 14:13:10,719:INFO:Starting cross validation
+2024-12-10 14:13:10,720:INFO:Cross validating with KFold(n_splits=5, random_state=None, shuffle=False), n_jobs=1
+2024-12-10 14:13:14,325:INFO:Calculating mean and std
+2024-12-10 14:13:14,326:INFO:Creating metrics dataframe
+2024-12-10 14:13:14,327:INFO:Uploading results into container
+2024-12-10 14:13:14,327:INFO:Uploading model into container now
+2024-12-10 14:13:14,327:INFO:_master_model_container: 16
+2024-12-10 14:13:14,328:INFO:_display_container: 2
+2024-12-10 14:13:14,328:INFO:AdaBoostRegressor(random_state=123)
+2024-12-10 14:13:14,328:INFO:create_model() successfully completed......................................
+2024-12-10 14:13:14,408:INFO:SubProcess create_model() end ==================================
+2024-12-10 14:13:14,408:INFO:Creating metrics dataframe
+2024-12-10 14:13:14,415:INFO:Initializing Gradient Boosting Regressor
+2024-12-10 14:13:14,415:INFO:Total runtime is 0.27784063418706256 minutes
+2024-12-10 14:13:14,418:INFO:SubProcess create_model() called ==================================
+2024-12-10 14:13:14,418:INFO:Initializing create_model()
+2024-12-10 14:13:14,418:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016EDE722730>, estimator=gbr, fold=KFold(n_splits=5, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000016EE2ED7AF0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-12-10 14:13:14,418:INFO:Checking exceptions
+2024-12-10 14:13:14,418:INFO:Importing libraries
+2024-12-10 14:13:14,418:INFO:Copying training dataset
+2024-12-10 14:13:14,441:INFO:Defining folds
+2024-12-10 14:13:14,441:INFO:Declaring metric variables
+2024-12-10 14:13:14,443:INFO:Importing untrained model
+2024-12-10 14:13:14,446:INFO:Gradient Boosting Regressor Imported successfully
+2024-12-10 14:13:14,450:INFO:Starting cross validation
+2024-12-10 14:13:14,451:INFO:Cross validating with KFold(n_splits=5, random_state=None, shuffle=False), n_jobs=1
+2024-12-10 14:13:20,084:INFO:Calculating mean and std
+2024-12-10 14:13:20,085:INFO:Creating metrics dataframe
+2024-12-10 14:13:20,086:INFO:Uploading results into container
+2024-12-10 14:13:20,087:INFO:Uploading model into container now
+2024-12-10 14:13:20,087:INFO:_master_model_container: 17
+2024-12-10 14:13:20,087:INFO:_display_container: 2
+2024-12-10 14:13:20,087:INFO:GradientBoostingRegressor(random_state=123)
+2024-12-10 14:13:20,087:INFO:create_model() successfully completed......................................
+2024-12-10 14:13:20,168:INFO:SubProcess create_model() end ==================================
+2024-12-10 14:13:20,168:INFO:Creating metrics dataframe
+2024-12-10 14:13:20,176:INFO:Initializing Extreme Gradient Boosting
+2024-12-10 14:13:20,176:INFO:Total runtime is 0.3738558530807495 minutes
+2024-12-10 14:13:20,178:INFO:SubProcess create_model() called ==================================
+2024-12-10 14:13:20,178:INFO:Initializing create_model()
+2024-12-10 14:13:20,178:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016EDE722730>, estimator=xgboost, fold=KFold(n_splits=5, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000016EE2ED7AF0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-12-10 14:13:20,178:INFO:Checking exceptions
+2024-12-10 14:13:20,178:INFO:Importing libraries
+2024-12-10 14:13:20,178:INFO:Copying training dataset
+2024-12-10 14:13:20,201:INFO:Defining folds
+2024-12-10 14:13:20,201:INFO:Declaring metric variables
+2024-12-10 14:13:20,204:INFO:Importing untrained model
+2024-12-10 14:13:20,207:INFO:Extreme Gradient Boosting Imported successfully
+2024-12-10 14:13:20,211:INFO:Starting cross validation
+2024-12-10 14:13:20,212:INFO:Cross validating with KFold(n_splits=5, random_state=None, shuffle=False), n_jobs=1
+2024-12-10 14:13:21,953:INFO:Calculating mean and std
+2024-12-10 14:13:21,954:INFO:Creating metrics dataframe
+2024-12-10 14:13:21,956:INFO:Uploading results into container
+2024-12-10 14:13:21,956:INFO:Uploading model into container now
+2024-12-10 14:13:21,956:INFO:_master_model_container: 18
+2024-12-10 14:13:21,957:INFO:_display_container: 2
+2024-12-10 14:13:21,957:INFO:XGBRegressor(base_score=None, booster='gbtree', callbacks=None,
+             colsample_bylevel=None, colsample_bynode=None,
+             colsample_bytree=None, early_stopping_rounds=None,
+             enable_categorical=False, eval_metric=None, feature_types=None,
+             gamma=None, gpu_id=None, grow_policy=None, importance_type=None,
+             interaction_constraints=None, learning_rate=None, max_bin=None,
+             max_cat_threshold=None, max_cat_to_onehot=None,
+             max_delta_step=None, max_depth=None, max_leaves=None,
+             min_child_weight=None, missing=nan, monotone_constraints=None,
+             n_estimators=100, n_jobs=-1, num_parallel_tree=None,
+             predictor=None, random_state=123, ...)
+2024-12-10 14:13:21,957:INFO:create_model() successfully completed......................................
+2024-12-10 14:13:22,037:INFO:SubProcess create_model() end ==================================
+2024-12-10 14:13:22,037:INFO:Creating metrics dataframe
+2024-12-10 14:13:22,044:INFO:Initializing Light Gradient Boosting Machine
+2024-12-10 14:13:22,044:INFO:Total runtime is 0.4049892862637837 minutes
+2024-12-10 14:13:22,047:INFO:SubProcess create_model() called ==================================
+2024-12-10 14:13:22,047:INFO:Initializing create_model()
+2024-12-10 14:13:22,047:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016EDE722730>, estimator=lightgbm, fold=KFold(n_splits=5, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000016EE2ED7AF0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-12-10 14:13:22,047:INFO:Checking exceptions
+2024-12-10 14:13:22,047:INFO:Importing libraries
+2024-12-10 14:13:22,047:INFO:Copying training dataset
+2024-12-10 14:13:22,069:INFO:Defining folds
+2024-12-10 14:13:22,069:INFO:Declaring metric variables
+2024-12-10 14:13:22,071:INFO:Importing untrained model
+2024-12-10 14:13:22,074:INFO:Light Gradient Boosting Machine Imported successfully
+2024-12-10 14:13:22,079:INFO:Starting cross validation
+2024-12-10 14:13:22,080:INFO:Cross validating with KFold(n_splits=5, random_state=None, shuffle=False), n_jobs=1
+2024-12-10 14:13:22,150:INFO:[LightGBM] [Info] This is the GPU trainer!!
+2024-12-10 14:13:22,150:INFO:[LightGBM] [Info] Total Bins 2375
+2024-12-10 14:13:22,150:INFO:[LightGBM] [Info] Number of data points in the train set: 5558, number of used features: 61
+2024-12-10 14:13:22,198:INFO:[LightGBM] [Info] Using GPU Device: NVIDIA GeForce RTX 4070 Ti, Vendor: NVIDIA Corporation
+2024-12-10 14:13:22,198:INFO:[LightGBM] [Info] Compiling OpenCL Kernel with 256 bins...
+2024-12-10 14:13:22,209:INFO:[LightGBM] [Info] GPU programs have been built
+2024-12-10 14:13:22,210:INFO:[LightGBM] [Info] Size of histogram bin entry: 8
+2024-12-10 14:13:22,212:INFO:[LightGBM] [Info] 25 dense feature groups (0.15 MB) transferred to GPU in 0.001607 secs. 1 sparse feature groups
+2024-12-10 14:13:22,212:INFO:[LightGBM] [Info] Start training from score 1.188377
+2024-12-10 14:13:22,708:INFO:[LightGBM] [Info] This is the GPU trainer!!
+2024-12-10 14:13:22,709:INFO:[LightGBM] [Info] Total Bins 2379
+2024-12-10 14:13:22,709:INFO:[LightGBM] [Info] Number of data points in the train set: 5558, number of used features: 61
+2024-12-10 14:13:22,757:INFO:[LightGBM] [Info] Using GPU Device: NVIDIA GeForce RTX 4070 Ti, Vendor: NVIDIA Corporation
+2024-12-10 14:13:22,757:INFO:[LightGBM] [Info] Compiling OpenCL Kernel with 256 bins...
+2024-12-10 14:13:22,765:INFO:[LightGBM] [Info] GPU programs have been built
+2024-12-10 14:13:22,766:INFO:[LightGBM] [Info] Size of histogram bin entry: 8
+2024-12-10 14:13:22,767:INFO:[LightGBM] [Info] 23 dense feature groups (0.13 MB) transferred to GPU in 0.001236 secs. 1 sparse feature groups
+2024-12-10 14:13:22,768:INFO:[LightGBM] [Info] Start training from score 1.219683
+2024-12-10 14:13:23,220:INFO:[LightGBM] [Info] This is the GPU trainer!!
+2024-12-10 14:13:23,220:INFO:[LightGBM] [Info] Total Bins 2378
+2024-12-10 14:13:23,220:INFO:[LightGBM] [Info] Number of data points in the train set: 5558, number of used features: 61
+2024-12-10 14:13:23,269:INFO:[LightGBM] [Info] Using GPU Device: NVIDIA GeForce RTX 4070 Ti, Vendor: NVIDIA Corporation
+2024-12-10 14:13:23,269:INFO:[LightGBM] [Info] Compiling OpenCL Kernel with 256 bins...
+2024-12-10 14:13:23,276:INFO:[LightGBM] [Info] GPU programs have been built
+2024-12-10 14:13:23,277:INFO:[LightGBM] [Info] Size of histogram bin entry: 8
+2024-12-10 14:13:23,279:INFO:[LightGBM] [Info] 23 dense feature groups (0.13 MB) transferred to GPU in 0.001217 secs. 1 sparse feature groups
+2024-12-10 14:13:23,279:INFO:[LightGBM] [Info] Start training from score 1.229399
+2024-12-10 14:13:23,741:INFO:[LightGBM] [Info] This is the GPU trainer!!
+2024-12-10 14:13:23,742:INFO:[LightGBM] [Info] Total Bins 2370
+2024-12-10 14:13:23,742:INFO:[LightGBM] [Info] Number of data points in the train set: 5559, number of used features: 61
+2024-12-10 14:13:23,789:INFO:[LightGBM] [Info] Using GPU Device: NVIDIA GeForce RTX 4070 Ti, Vendor: NVIDIA Corporation
+2024-12-10 14:13:23,789:INFO:[LightGBM] [Info] Compiling OpenCL Kernel with 256 bins...
+2024-12-10 14:13:23,796:INFO:[LightGBM] [Info] GPU programs have been built
+2024-12-10 14:13:23,798:INFO:[LightGBM] [Info] Size of histogram bin entry: 8
+2024-12-10 14:13:23,799:INFO:[LightGBM] [Info] 25 dense feature groups (0.15 MB) transferred to GPU in 0.001384 secs. 1 sparse feature groups
+2024-12-10 14:13:23,800:INFO:[LightGBM] [Info] Start training from score 1.199676
+2024-12-10 14:13:24,287:INFO:[LightGBM] [Info] This is the GPU trainer!!
+2024-12-10 14:13:24,287:INFO:[LightGBM] [Info] Total Bins 2368
+2024-12-10 14:13:24,287:INFO:[LightGBM] [Info] Number of data points in the train set: 5559, number of used features: 61
+2024-12-10 14:13:24,333:INFO:[LightGBM] [Info] Using GPU Device: NVIDIA GeForce RTX 4070 Ti, Vendor: NVIDIA Corporation
+2024-12-10 14:13:24,333:INFO:[LightGBM] [Info] Compiling OpenCL Kernel with 256 bins...
+2024-12-10 14:13:24,339:INFO:[LightGBM] [Info] GPU programs have been built
+2024-12-10 14:13:24,341:INFO:[LightGBM] [Info] Size of histogram bin entry: 8
+2024-12-10 14:13:24,342:INFO:[LightGBM] [Info] 25 dense feature groups (0.15 MB) transferred to GPU in 0.001401 secs. 1 sparse feature groups
+2024-12-10 14:13:24,343:INFO:[LightGBM] [Info] Start training from score 1.204173
+2024-12-10 14:13:24,753:INFO:Calculating mean and std
+2024-12-10 14:13:24,754:INFO:Creating metrics dataframe
+2024-12-10 14:13:24,756:INFO:Uploading results into container
+2024-12-10 14:13:24,756:INFO:Uploading model into container now
+2024-12-10 14:13:24,757:INFO:_master_model_container: 19
+2024-12-10 14:13:24,757:INFO:_display_container: 2
+2024-12-10 14:13:24,757:INFO:LGBMRegressor(device='gpu', n_jobs=-1, random_state=123)
+2024-12-10 14:13:24,757:INFO:create_model() successfully completed......................................
+2024-12-10 14:13:24,837:INFO:SubProcess create_model() end ==================================
+2024-12-10 14:13:24,837:INFO:Creating metrics dataframe
+2024-12-10 14:13:24,844:INFO:Initializing CatBoost Regressor
+2024-12-10 14:13:24,844:INFO:Total runtime is 0.45166448354721067 minutes
+2024-12-10 14:13:24,847:INFO:SubProcess create_model() called ==================================
+2024-12-10 14:13:24,847:INFO:Initializing create_model()
+2024-12-10 14:13:24,847:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016EDE722730>, estimator=catboost, fold=KFold(n_splits=5, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000016EE2ED7AF0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-12-10 14:13:24,847:INFO:Checking exceptions
+2024-12-10 14:13:24,847:INFO:Importing libraries
+2024-12-10 14:13:24,847:INFO:Copying training dataset
+2024-12-10 14:13:24,869:INFO:Defining folds
+2024-12-10 14:13:24,869:INFO:Declaring metric variables
+2024-12-10 14:13:24,871:INFO:Importing untrained model
+2024-12-10 14:13:24,873:INFO:CatBoost Regressor Imported successfully
+2024-12-10 14:13:24,878:INFO:Starting cross validation
+2024-12-10 14:13:24,879:INFO:Cross validating with KFold(n_splits=5, random_state=None, shuffle=False), n_jobs=1
+2024-12-10 14:14:03,872:INFO:Calculating mean and std
+2024-12-10 14:14:03,873:INFO:Creating metrics dataframe
+2024-12-10 14:14:03,874:INFO:Uploading results into container
+2024-12-10 14:14:03,875:INFO:Uploading model into container now
+2024-12-10 14:14:03,875:INFO:_master_model_container: 20
+2024-12-10 14:14:03,875:INFO:_display_container: 2
+2024-12-10 14:14:03,875:INFO:<catboost.core.CatBoostRegressor object at 0x0000016EE30F3820>
+2024-12-10 14:14:03,875:INFO:create_model() successfully completed......................................
+2024-12-10 14:14:03,958:INFO:SubProcess create_model() end ==================================
+2024-12-10 14:14:03,958:INFO:Creating metrics dataframe
+2024-12-10 14:14:03,965:INFO:Initializing Dummy Regressor
+2024-12-10 14:14:03,966:INFO:Total runtime is 1.1036945422490438 minutes
+2024-12-10 14:14:03,968:INFO:SubProcess create_model() called ==================================
+2024-12-10 14:14:03,968:INFO:Initializing create_model()
+2024-12-10 14:14:03,968:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016EDE722730>, estimator=dummy, fold=KFold(n_splits=5, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000016EE2ED7AF0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-12-10 14:14:03,968:INFO:Checking exceptions
+2024-12-10 14:14:03,968:INFO:Importing libraries
+2024-12-10 14:14:03,968:INFO:Copying training dataset
+2024-12-10 14:14:03,990:INFO:Defining folds
+2024-12-10 14:14:03,991:INFO:Declaring metric variables
+2024-12-10 14:14:03,993:INFO:Importing untrained model
+2024-12-10 14:14:03,996:INFO:Dummy Regressor Imported successfully
+2024-12-10 14:14:04,000:INFO:Starting cross validation
+2024-12-10 14:14:04,001:INFO:Cross validating with KFold(n_splits=5, random_state=None, shuffle=False), n_jobs=1
+2024-12-10 14:14:04,417:INFO:Calculating mean and std
+2024-12-10 14:14:04,420:INFO:Creating metrics dataframe
+2024-12-10 14:14:04,421:INFO:Uploading results into container
+2024-12-10 14:14:04,422:INFO:Uploading model into container now
+2024-12-10 14:14:04,422:INFO:_master_model_container: 21
+2024-12-10 14:14:04,422:INFO:_display_container: 2
+2024-12-10 14:14:04,422:INFO:DummyRegressor()
+2024-12-10 14:14:04,422:INFO:create_model() successfully completed......................................
+2024-12-10 14:14:04,502:INFO:SubProcess create_model() end ==================================
+2024-12-10 14:14:04,502:INFO:Creating metrics dataframe
+2024-12-10 14:14:04,509:WARNING:Styler.applymap has been deprecated. Use Styler.map instead.
+
+2024-12-10 14:14:04,515:INFO:Initializing create_model()
+2024-12-10 14:14:04,515:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016EDE722730>, estimator=ExtraTreesRegressor(n_jobs=-1, random_state=123), fold=KFold(n_splits=5, random_state=None, shuffle=False), round=4, cross_validation=False, predict=False, fit_kwargs={}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=None, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-12-10 14:14:04,515:INFO:Checking exceptions
+2024-12-10 14:14:04,516:INFO:Importing libraries
+2024-12-10 14:14:04,516:INFO:Copying training dataset
+2024-12-10 14:14:04,538:INFO:Defining folds
+2024-12-10 14:14:04,538:INFO:Declaring metric variables
+2024-12-10 14:14:04,538:INFO:Importing untrained model
+2024-12-10 14:14:04,538:INFO:Declaring custom model
+2024-12-10 14:14:04,539:INFO:Extra Trees Regressor Imported successfully
+2024-12-10 14:14:04,540:INFO:Cross validation set to False
+2024-12-10 14:14:04,540:INFO:Fitting Model
+2024-12-10 14:14:04,851:INFO:ExtraTreesRegressor(n_jobs=-1, random_state=123)
+2024-12-10 14:14:04,851:INFO:create_model() successfully completed......................................
+2024-12-10 14:14:04,952:INFO:_master_model_container: 21
+2024-12-10 14:14:04,952:INFO:_display_container: 2
+2024-12-10 14:14:04,953:INFO:ExtraTreesRegressor(n_jobs=-1, random_state=123)
+2024-12-10 14:14:04,953:INFO:compare_models() successfully completed......................................
+2024-12-10 14:14:04,954:INFO:Initializing finalize_model()
+2024-12-10 14:14:04,954:INFO:finalize_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016EDE722730>, estimator=ExtraTreesRegressor(n_jobs=-1, random_state=123), fit_kwargs=None, groups=None, model_only=False, experiment_custom_tags=None)
+2024-12-10 14:14:04,954:INFO:Finalizing ExtraTreesRegressor(n_jobs=-1, random_state=123)
+2024-12-10 14:14:04,967:INFO:Initializing create_model()
+2024-12-10 14:14:04,967:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016EDE722730>, estimator=ExtraTreesRegressor(n_jobs=-1, random_state=123), fold=None, round=4, cross_validation=False, predict=False, fit_kwargs={}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=False, metrics=None, display=None, model_only=False, return_train_score=False, error_score=0.0, kwargs={})
+2024-12-10 14:14:04,967:INFO:Checking exceptions
+2024-12-10 14:14:04,969:INFO:Importing libraries
+2024-12-10 14:14:04,969:INFO:Copying training dataset
+2024-12-10 14:14:04,970:INFO:Defining folds
+2024-12-10 14:14:04,970:INFO:Declaring metric variables
+2024-12-10 14:14:04,970:INFO:Importing untrained model
+2024-12-10 14:14:04,970:INFO:Declaring custom model
+2024-12-10 14:14:04,970:INFO:Extra Trees Regressor Imported successfully
+2024-12-10 14:14:04,971:INFO:Cross validation set to False
+2024-12-10 14:14:04,971:INFO:Fitting Model
+2024-12-10 14:14:05,363:INFO:Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['assists', 'clean_sheets',
+                                             'creativity', 'element',
+                                             'expected_assists',
+                                             'expected_goal_involvements',
+                                             'expected_goals',
+                                             'expected_goals_conceded',
+                                             'goals_conceded', 'goals_scored',
+                                             'ict_index', 'influence',
+                                             'minutes', 'opponent_team',
+                                             'own_goals', 'penalties_missed',
+                                             'pen...
+                ('categorical_imputer',
+                 TransformerWrapper(include=['name'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('rest_encoding',
+                 TransformerWrapper(include=['name'],
+                                    transformer=TargetEncoder(cols=['name'],
+                                                              handle_missing='return_nan'))),
+                ('normalize', TransformerWrapper(transformer=RobustScaler())),
+                ('actual_estimator',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=123))])
+2024-12-10 14:14:05,363:INFO:create_model() successfully completed......................................
+2024-12-10 14:14:05,442:INFO:_master_model_container: 21
+2024-12-10 14:14:05,442:INFO:_display_container: 2
+2024-12-10 14:14:05,448:INFO:Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['assists', 'clean_sheets',
+                                             'creativity', 'element',
+                                             'expected_assists',
+                                             'expected_goal_involvements',
+                                             'expected_goals',
+                                             'expected_goals_conceded',
+                                             'goals_conceded', 'goals_scored',
+                                             'ict_index', 'influence',
+                                             'minutes', 'opponent_team',
+                                             'own_goals', 'penalties_missed',
+                                             'pen...
+                ('categorical_imputer',
+                 TransformerWrapper(include=['name'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('rest_encoding',
+                 TransformerWrapper(include=['name'],
+                                    transformer=TargetEncoder(cols=['name'],
+                                                              handle_missing='return_nan'))),
+                ('normalize', TransformerWrapper(transformer=RobustScaler())),
+                ('actual_estimator',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=123))])
+2024-12-10 14:14:05,448:INFO:finalize_model() successfully completed......................................
+2024-12-10 14:14:05,533:INFO:Initializing predict_model()
+2024-12-10 14:14:05,534:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016EDE722730>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['assists', 'clean_sheets',
+                                             'creativity', 'element',
+                                             'expected_assists',
+                                             'expected_goal_involvements',
+                                             'expected_goals',
+                                             'expected_goals_conceded',
+                                             'goals_conceded', 'goals_scored',
+                                             'ict_index', 'influence',
+                                             'minutes', 'opponent_team',
+                                             'own_goals', 'penalties_missed',
+                                             'pen...
+                ('categorical_imputer',
+                 TransformerWrapper(include=['name'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('rest_encoding',
+                 TransformerWrapper(include=['name'],
+                                    transformer=TargetEncoder(cols=['name'],
+                                                              handle_missing='return_nan'))),
+                ('normalize', TransformerWrapper(transformer=RobustScaler())),
+                ('actual_estimator',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016EE30FD3A0>)
+2024-12-10 14:14:05,534:INFO:Checking exceptions
+2024-12-10 14:14:05,534:INFO:Preloading libraries
+2024-12-10 14:14:05,535:INFO:Set up data.
+2024-12-10 14:14:05,549:INFO:Set up index.
+2024-12-10 14:14:05,623:WARNING:'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+
+2024-12-10 14:14:08,707:INFO:Initializing predict_model()
+2024-12-10 14:14:08,708:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016EDE722730>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['assists', 'clean_sheets',
+                                             'creativity', 'element',
+                                             'expected_assists',
+                                             'expected_goal_involvements',
+                                             'expected_goals',
+                                             'expected_goals_conceded',
+                                             'goals_conceded', 'goals_scored',
+                                             'ict_index', 'influence',
+                                             'minutes', 'opponent_team',
+                                             'own_goals', 'penalties_missed',
+                                             'pen...
+                ('categorical_imputer',
+                 TransformerWrapper(include=['name'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('rest_encoding',
+                 TransformerWrapper(include=['name'],
+                                    transformer=TargetEncoder(cols=['name'],
+                                                              handle_missing='return_nan'))),
+                ('normalize', TransformerWrapper(transformer=RobustScaler())),
+                ('actual_estimator',
+                 ExtraTreesRegressor(n_jobs=-1, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016EE9C6AD30>)
+2024-12-10 14:14:08,708:INFO:Checking exceptions
+2024-12-10 14:14:08,708:INFO:Preloading libraries
+2024-12-10 14:14:08,710:INFO:Set up data.
+2024-12-10 14:14:08,721:INFO:Set up index.
+2024-12-10 14:14:08,760:WARNING:'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+
