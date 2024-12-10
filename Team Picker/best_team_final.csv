@@ -1,0 +1,16 @@
+name,predicted_points,position,team,value,PPM,cost,selected
+Ashley Young,6.8,DEF,Everton,46.0,1.4782609002125968,4.6,1
+Vitalii Mykolenko,6.01,DEF,Everton,43.0,1.3976743566080867,4.3,1
+Daniel Muñoz,5.73,DEF,Crystal Palace,47.0,1.2191489856455777,4.7,1
+William Saliba,7.22,DEF,Arsenal,62.0,1.1645161648570697,6.2,1
+James Tarkowski,5.47,DEF,Everton,48.0,1.1395832880503618,4.8,1
+Jamie Vardy,6.08,FWD,Leicester,55.0,1.1054545454545455,5.5,1
+Yoane Wissa,5.73,FWD,Brentford,62.0,0.9241935768186993,6.2,1
+Alexander Isak,6.41,FWD,Newcastle,86.0,0.7453488041479065,8.6,1
+Jordan Pickford,5.48,GKP,Everton,49.0,1.1183673251722819,4.9,1
+Caoimhin Kelleher,4.77,GKP,Liverpool,46.0,1.0369565432373655,4.6,1
+Enzo Fernández,8.05,MID,Chelsea,50.0,1.61,5.0,1
+Kevin Schade,7.58,MID,Brentford,51.0,1.486274537596507,5.1,1
+Mohamed Salah,14.82,MID,Liverpool,133.0,1.1142856983057796,13.3,1
+Cole Palmer,10.94,MID,Chelsea,111.0,0.9855855517143197,11.1,1
+Bruno Borges Fernandes,7.01,MID,Man Utd,85.0,0.8247058823529412,8.5,1
