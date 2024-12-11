@@ -10,7 +10,7 @@ id,full_name,team,position,total_points,matches_played,value,points_per_match,pp
 9,Gabriel Martinelli Silva,Arsenal,MID,50,8,6.8,6.25,0.9191176470588236
 12,Ethan Nwaneri,Arsenal,MID,13,0,4.5,inf,inf
 13,Martin Ødegaard,Arsenal,MID,33,7,8.3,4.714285714285714,0.5679862306368331
-15,David Raya Martin,Arsenal,GKP,58,15,5.5,3.8666666666666667,0.703030303030303
+15,David Raya Martin,Arsenal,GKP,58,15,5.6,3.8666666666666667,0.6904761904761906
 16,Declan Rice,Arsenal,MID,30,12,6.2,2.5,0.4032258064516129
 17,Bukayo Saka,Arsenal,MID,103,12,10.5,8.583333333333334,0.8174603174603176
 18,William Saliba,Arsenal,DEF,55,13,6.2,4.230769230769231,0.6823821339950372
@@ -374,7 +374,7 @@ id,full_name,team,position,total_points,matches_played,value,points_per_match,pp
 303,Harry Souttar,Leicester,DEF,0,0,4.0,,
 304,Jakub Stolarczyk,Leicester,GKP,0,0,4.0,,
 305,Luke Thomas,Leicester,DEF,0,1,3.9,0.0,0.0
-306,Jamie Vardy,Leicester,FWD,66,12,5.5,5.5,1.0
+306,Jamie Vardy,Leicester,FWD,66,12,5.6,5.5,0.9821428571428572
 307,Jannik Vestergaard,Leicester,DEF,7,6,4.0,1.1666666666666667,0.2916666666666667
 308,Danny Ward,Leicester,GKP,0,0,4.0,,
 309,Harry Winks,Leicester,MID,23,9,4.5,2.5555555555555554,0.5679012345679012
